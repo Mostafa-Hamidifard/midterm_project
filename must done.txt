@@ -1,0 +1,11 @@
+1. DFS and BFS understandings
+2. how to model a maze
+3. what features of cpp will I specificly use(for better learning)
+4. docker file, make file, folders etc.
+5. a good interface. color, main menu, scape keys, do we need GUI?(after algorithm finished)
+* learn how to use OS libraries for GUI.
+6. generating random mazes and displaying them in a beautiful way.
+7. the user must choose dimention of Maze
+8. implement Bidirectional search(optional)
+9. using threads and using more speed :)
+10. using Timing and delays to show algorithms to users beautifully.
