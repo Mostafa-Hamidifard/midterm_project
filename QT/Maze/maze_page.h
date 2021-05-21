@@ -12,7 +12,7 @@ class maze_page : public QDialog
     Q_OBJECT
 
 public:
-    explicit maze_page(QWidget *parent = nullptr);
+    explicit maze_page(QWidget *parent = nullptr,int m=10,int n=20);
     ~maze_page();
 
 private:

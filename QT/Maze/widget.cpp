@@ -27,12 +27,10 @@ void Widget::on_btn_lets_go_clicked()
     std::string x_dim =  ui->edttxt_xdim->text().toStdString();
     std::string y_dim =  ui->edttxt_ydim->text().toStdString();
     if(is_number(x_dim)&&is_number(y_dim)){
-       maze_page m;
-     //  m.setWhatsThis("Awesome Maze");
-       m.setWindowFlag(Qt::WindowContextHelpButtonHint,false);
-       m.setModal(true);
-       m.exec();
-
+       maze_page page(nullptr,stoi(x_dim),stoi(y_dim));
+       page.setWindowFlag(Qt::WindowContextHelpButtonHint,false);
+       page.setModal(true);
+       page.exec();
 
     }else{
         QMessageBox msgBox;

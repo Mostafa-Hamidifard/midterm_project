@@ -18,8 +18,6 @@ public:
 private slots:
     void on_btn_lets_go_clicked();
 
-    void on_edttxt_xdim_textChanged(const QString &arg1);
-
 private:
     Ui::Widget *ui;
 };

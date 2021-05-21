@@ -10,11 +10,15 @@ CONFIG += c++11
 
 SOURCES += \
     main.cpp \
+    maze.cpp \
     maze_page.cpp \
+    rectnode.cpp \
     widget.cpp
 
 HEADERS += \
+    maze.h \
     maze_page.h \
+    rectnode.h \
     widget.h
 
 FORMS += \
