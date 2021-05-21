@@ -1,4 +1,4 @@
-1. DFS and BFS understandings
+1. DFS and BFS understandings // checked
 2. how to model a maze
 3. what features of cpp will I specificly use(for better learning)
 4. docker file, make file, folders etc.
