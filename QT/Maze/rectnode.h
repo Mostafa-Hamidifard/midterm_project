@@ -5,18 +5,20 @@
 #include<QtGui>
 #include<QGraphicsScene>
 #include<map>
+#include<vector>
 class RectNode
 {
 public:
     RectNode(int x,int y,bool passed);
     ~RectNode();
     void add_node(QGraphicsScene* scene);
-    enum others{left,right,up,down};
-    std::map<others,RectNode*> neighbours{{right,nullptr},{left,nullptr},{up,nullptr},{down,nullptr}};
+    enum others{left=0,right=1,up=2,down=3};
+    std::map<int,RectNode*> neighbours{{right,nullptr},{left,nullptr},{up,nullptr},{down,nullptr}};
     static void make_neighbour(RectNode* r1,RectNode* r2);
     static void update_rect_nei_colors(RectNode *node);
     void set_passed(bool passed);
     bool get_passed();
+    std::vector<int> neighbour_available();
     int x{};
     int y{};
     QGraphicsRectItem * top_left_rec;
