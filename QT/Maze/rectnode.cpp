@@ -1,22 +1,22 @@
 #include "rectnode.h"
 
-RectNode::RectNode(int _x,int _y,bool enabled):
+RectNode::RectNode(int _x,int _y,bool _passed):
     x{_x},y{_y}
 {   int length{corner_scale+center_scale};
-    x *= length;
-    y *= length;
-   top_left_rec = new QGraphicsRectItem(x,y,corner_scale,corner_scale);
-   buttom_left_rec = new QGraphicsRectItem(x,y+center_scale+corner_scale,corner_scale,corner_scale);
-   top_right_rec = new QGraphicsRectItem(x+center_scale+corner_scale,y,corner_scale,corner_scale);
-   buttom_right_rec = new QGraphicsRectItem(x+center_scale+corner_scale,y+center_scale+corner_scale,corner_scale,corner_scale);
+    passed = _passed;
+    _x *= length;
+    _y *= length;
+   top_left_rec = new QGraphicsRectItem(_x,_y,corner_scale,corner_scale);
+   buttom_left_rec = new QGraphicsRectItem(_x,_y+center_scale+corner_scale,corner_scale,corner_scale);
+   top_right_rec = new QGraphicsRectItem(_x+center_scale+corner_scale,_y,corner_scale,corner_scale);
+   buttom_right_rec = new QGraphicsRectItem(_x+center_scale+corner_scale,_y+center_scale+corner_scale,corner_scale,corner_scale);
 
-   center_rec = new QGraphicsRectItem(x+corner_scale,y+corner_scale,center_scale,center_scale);
+   center_rec = new QGraphicsRectItem(_x+corner_scale,_y+corner_scale,center_scale,center_scale);
 
-   left_rec = new QGraphicsRectItem(x,y+corner_scale,corner_scale,center_scale);
-   up_rec = new QGraphicsRectItem(x+corner_scale,y,center_scale,corner_scale);
-   right_rec = new QGraphicsRectItem(x+center_scale+corner_scale,y+corner_scale,corner_scale,center_scale);
-   down_rec = new QGraphicsRectItem(x+corner_scale,y+corner_scale+center_scale,center_scale,corner_scale);
-
+   left_rec = new QGraphicsRectItem(_x,_y+corner_scale,corner_scale,center_scale);
+   up_rec = new QGraphicsRectItem(_x+corner_scale,_y,center_scale,corner_scale);
+   right_rec = new QGraphicsRectItem(_x+center_scale+corner_scale,_y+corner_scale,corner_scale,center_scale);
+   down_rec = new QGraphicsRectItem(_x+corner_scale,_y+corner_scale+center_scale,center_scale,corner_scale);
 }
 RectNode::~RectNode()
 {
@@ -67,12 +67,72 @@ void RectNode::make_neighbour(RectNode* r1,RectNode* r2){
              r2->neighbours[others::down] = r1;
             break;
         default:
-             throw std::logic_error("error in make_neighbour");
+             throw std::logic_error(std::string("error in make_neighbour dx: ") + std::to_string(dx) +std::string(", dy: "+std::to_string(dy)));
         }
     }
-    change_colors(r1);
-    change_colors(r2);
+    update_rect_nei_colors(r1);
+    update_rect_nei_colors(r2);
 }
-void RectNode::change_colors(RectNode* r1){
+void RectNode::update_rect_nei_colors(RectNode *node)
+{
+    auto block_color = Qt::black;
+    auto no_block_color = Qt::white;
+    for(const auto [key,value] : node->neighbours){
+        if(value == nullptr){
+           if(key == node->left){
+                node->left_rec->setBrush(block_color);
+                node->top_left_rec->setBrush(block_color);
+                node->buttom_left_rec->setBrush(block_color);
+           }else if(key == node->right){
+               node->right_rec->setBrush(block_color);
+               node->top_right_rec->setBrush(block_color);
+               node->buttom_right_rec->setBrush(block_color);
+           }else if(key == node->up){
+               node->up_rec->setBrush(block_color);
+               node->top_left_rec->setBrush(block_color);
+               node->top_right_rec->setBrush(block_color);
+           }else if(key == node->down){
+               node->down_rec->setBrush(block_color);
+               node->buttom_left_rec->setBrush(block_color);
+               node->buttom_right_rec->setBrush(block_color);
+             }
+        }else{
+            if(key == node->left){
+                 node->left_rec->setBrush(no_block_color);
+                 node->left_rec->setPen(Qt::NoPen);;
+                // node->top_left_rec->setBrush(no_block_color);
+               //  node->buttom_left_rec->setBrush(no_block_color);
+            }else if(key == node->right){
+                node->right_rec->setBrush(no_block_color);
+                  //  node->top_right_rec->setBrush(no_block_color);
+                //node->buttom_right_rec->setBrush(no_block_color);
+                node->right_rec->setPen(Qt::NoPen);
 
+            }else if(key == node->up){
+                node->up_rec->setBrush(no_block_color);
+                //node->top_left_rec->setBrush(no_block_color);
+                //node->top_right_rec->setBrush(no_block_color);
+                node->up_rec->setPen(Qt::NoPen);
+            }else if(key == node->down){
+                node->down_rec->setBrush(no_block_color);
+                //node->buttom_left_rec->setBrush(no_block_color);
+                //node->buttom_right_rec->setBrush(no_block_color);
+
+                node->down_rec->setPen(Qt::NoPen);
+
+              }
+           node->center_rec->setPen(Qt::NoPen);
+        }
+    }
+}
+
+void RectNode::set_passed(bool _passed)
+{
+    passed = _passed;
+    //update_rect_pass_colors(this);
+}
+
+bool RectNode::get_passed()
+{
+    return passed;
 }

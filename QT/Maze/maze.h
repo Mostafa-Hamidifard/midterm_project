@@ -13,6 +13,7 @@ public:
     int m{},n{};
     std::vector<std::vector<RectNode*>> matrix;
     void add_maze(QGraphicsScene* scene);
+    static void update_rect_colors(RectNode* node);
 };
 
 #endif // MAZE_H

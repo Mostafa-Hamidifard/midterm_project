@@ -18,8 +18,6 @@ maze_page::maze_page(QWidget *parent,int m,int n) :
     Maze * maze = new Maze(m,n);
     maze->add_maze(scene);
     this->showMaximized();
-
-
 }
 
 maze_page::~maze_page()
