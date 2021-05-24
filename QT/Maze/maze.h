@@ -16,9 +16,12 @@ public:
     void add_maze(QGraphicsScene* scene);
     static void update_rect_colors(RectNode* node);
 private:
+    std::vector<int> neighbour_available(RectNode* rec);
     void create_maze(int m,int n);
     bool is_any_rect_notpassed();
     bool is_in_path(const int& x,const int& y,const std::deque<RectNode*>& path) const;
+    std::deque<RectNode*> path{};
+    bool is_passed(const int& x,const int& y);
 };
 
 #endif // MAZE_H

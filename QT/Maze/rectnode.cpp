@@ -137,12 +137,4 @@ bool RectNode::get_passed()
     return passed;
 }
 
-std::vector<int> RectNode::neighbour_available()
-{
-    std::vector<int> negh{};
-    for(auto [key,value] : neighbours){
-        if(value ==nullptr)
-            negh.push_back(key);
-    }
-    return negh;
-}
+

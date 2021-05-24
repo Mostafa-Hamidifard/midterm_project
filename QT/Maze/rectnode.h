@@ -18,7 +18,7 @@ public:
     static void update_rect_nei_colors(RectNode *node);
     void set_passed(bool passed);
     bool get_passed();
-    std::vector<int> neighbour_available();
+
     int x{};
     int y{};
     QGraphicsRectItem * top_left_rec;
