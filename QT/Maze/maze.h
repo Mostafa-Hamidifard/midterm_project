@@ -5,6 +5,7 @@
 #include<QGraphicsScene>
 #include <stdlib.h>     /* srand, rand */
 #include <time.h>
+#include<deque>
 class Maze
 {
 public:
@@ -17,6 +18,7 @@ public:
 private:
     void create_maze(int m,int n);
     bool is_any_rect_notpassed();
+    bool is_in_path(const int& x,const int& y,const std::deque<RectNode*>& path) const;
 };
 
 #endif // MAZE_H

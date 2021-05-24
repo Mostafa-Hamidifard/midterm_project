@@ -55,8 +55,10 @@ void Maze::create_maze(int _m,int _n)
 {
     srand (time(NULL));
     std::stack<RectNode*> stack{}; // used for tracking
+    std::deque<RectNode*> path{};
     matrix[0][0]->set_passed(true);
     stack.push(matrix[0][0]); // first one is [0][0]
+    path.push_back(matrix[0][0]);
     std::vector<int> negh_avai{stack.top()->neighbour_available()};
     int nn{};
     while (is_any_rect_notpassed()) {
@@ -64,7 +66,7 @@ void Maze::create_maze(int _m,int _n)
                auto curr_rect = stack.top();
                RectNode* new_negh;
                nn = rand() % negh_avai.size();
-               if(negh_avai[nn] == RectNode::others::down){
+               if(negh_avai[nn] == RectNode::others::down && !is_in_path(curr_rect->x,curr_rect->y+1,path)){
                     new_negh = matrix[curr_rect->x][curr_rect->y+1];
                }else if(negh_avai[nn] == RectNode::others::left){
                     new_negh = matrix[curr_rect->x-1][curr_rect->y];
@@ -80,7 +82,8 @@ void Maze::create_maze(int _m,int _n)
              }
           stack.pop();
           negh_avai = stack.top()->neighbour_available();
-          while(negh_avai.empty()){
+          bool flag = true;
+          while(negh_avai.empty() || flag){             //////////////////////need to get changed
               stack.pop();
               negh_avai = stack.top()->neighbour_available();
           }
@@ -96,6 +99,17 @@ bool Maze::is_any_rect_notpassed()
        }
     }
     return false;
+}
+
+bool Maze::is_in_path(const int& x,const int& y, const std::deque<RectNode *> &path) const
+{  if(x<0 || x >= m || y<0 || y>=n)
+        throw std::out_of_range("out of maze");
+    RectNode* rec{matrix[x][y]};
+   auto it{ std::find(path.cbegin(),path.cend(),rec)};
+   if(it==path.cend())
+       return false;
+   return true;
+
 }
 
 
