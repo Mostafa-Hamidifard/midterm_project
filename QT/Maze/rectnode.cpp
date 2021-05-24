@@ -129,7 +129,11 @@ void RectNode::update_rect_nei_colors(RectNode *node)
 void RectNode::set_passed(bool _passed)
 {
     passed = _passed;
-    //update_rect_pass_colors(this);
+    if(passed){
+        this->center_rec->setBrush(Qt::green);
+    }else{
+        this->center_rec->setBrush(Qt::white);
+    }
 }
 
 bool RectNode::get_passed()
