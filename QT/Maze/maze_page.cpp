@@ -54,3 +54,9 @@ void maze_page::on_pad_left_clicked()
     maze->change_head(Maze::left);
 
 }
+
+
+void maze_page::on_btn_bfs_clicked()
+{
+    maze->solveBFS();
+}

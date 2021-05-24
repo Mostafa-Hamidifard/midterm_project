@@ -18,6 +18,8 @@ public:
     void clear_path();
     enum direction{left=0,right=1,up=2,down=3};
     void change_head(direction d);
+    void solveBFS();
+    bool Breadth_first_search(RectNode*,RectNode*);
 private:
     std::vector<int> neighbour_available(RectNode* rec);
     void create_maze();

@@ -118,7 +118,7 @@
        <item>
         <layout class="QVBoxLayout" name="new_reset_lay">
          <item>
-          <widget class="QPushButton" name="pushButton_2">
+          <widget class="QPushButton" name="btn_dfs">
            <property name="minimumSize">
             <size>
              <width>100</width>
@@ -137,7 +137,7 @@
           </widget>
          </item>
          <item>
-          <widget class="QPushButton" name="pushButton_9">
+          <widget class="QPushButton" name="btn_bid">
            <property name="minimumSize">
             <size>
              <width>200</width>
@@ -156,7 +156,7 @@
           </widget>
          </item>
          <item>
-          <widget class="QPushButton" name="pushButton">
+          <widget class="QPushButton" name="btn_bfs">
            <property name="minimumSize">
             <size>
              <width>100</width>

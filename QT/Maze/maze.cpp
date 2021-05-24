@@ -2,6 +2,8 @@
 #include<stack>
 #include<QDebug>
 #include<iostream>
+#include <QThread>
+#include<windows.h>
 Maze::Maze(int _m,int _n):m{_m},n{_n}
 {
     for(int i{0};i<m;i++){
@@ -77,6 +79,52 @@ void Maze::change_head(Maze::direction d)
         rec_negh->set_passed(true);
     }
 
+}
+
+void Maze::solveBFS()
+{
+    clear_path();
+    if(path.back()==matrix[m-1][n-1]){
+        return;
+    }else{
+        qDebug()<<"BFS begins:";
+        Maze::Breadth_first_search(path.back(),nullptr);
+    }
+
+}
+
+bool Maze::Breadth_first_search(RectNode* rec,RectNode* par) // it needs to change//1,2 should work!
+{
+    qDebug()<<"BFS begins with rect: x: "<<rec->x<<" y: "<<rec->y;
+    for(auto real_negh: rec->neighbours){
+        if(real_negh.second == nullptr||real_negh.second == par)
+            continue;
+        qDebug()<<"searching in neghs, neighbour: x: "<<real_negh.second->x<<" y: "<<real_negh.second->y;
+        path.push_back(real_negh.second);
+        if(real_negh.second == matrix[m-1][n-1]){
+            return true;
+        }
+       //real_negh.second->set_passed(false);
+        path.pop_back();
+    }
+    for(auto negh: rec->neighbours){
+        //negh.second->set_passed(true);
+        if(negh.second == nullptr || negh.second ==par)
+            continue;
+        path.push_back(negh.second);
+        for(auto item: negh.second->neighbours){
+            if(item.second == nullptr ||item.second == rec)
+                continue;
+            path.push_back(item.second);
+            if(Breadth_first_search(item.second,negh.second))
+                return true;
+            path.pop_back();
+        }
+        path.pop_back();
+      //  negh.second->set_passed(false);
+    }
+    for(auto item: path)
+        item->set_passed(true);
 }
 
 void Maze::create_maze()
