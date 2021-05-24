@@ -34,14 +34,12 @@ void maze_page::on_pushButton_5_clicked()
 void maze_page::on_pad_up_clicked()
 {
     maze->change_head(Maze::up);
-    std::cout<<"up\n";
 
 }
 
 void maze_page::on_pad_right_clicked()
 {
      maze->change_head(Maze::right);
-     std::cout<<"right\n";
 
 }
 
@@ -49,12 +47,10 @@ void maze_page::on_pad_down_clicked()
 {
 
     maze->change_head(Maze::down);
-    std::cout<<"down\n";
 }
 
 void maze_page::on_pad_left_clicked()
 {
     maze->change_head(Maze::left);
-    std::cout<<"left\n";
 
 }
