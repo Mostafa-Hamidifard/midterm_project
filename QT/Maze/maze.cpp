@@ -88,7 +88,7 @@ void Maze::solveBFS()
         return;
     }else{
         qDebug()<<"BFS begins:";
-        Maze::Breadth_first_search(path.back(),nullptr);
+        //   Maze::Breadth_first_search(path.back(),nullptr);
     }
 
 }
@@ -104,7 +104,7 @@ bool Maze::Breadth_first_search(RectNode* rec,RectNode* par) // it needs to chan
         if(real_negh.second == matrix[m-1][n-1]){
             return true;
         }
-       //real_negh.second->set_passed(false);
+        //real_negh.second->set_passed(false);
         path.pop_back();
     }
     for(auto negh: rec->neighbours){
@@ -121,7 +121,7 @@ bool Maze::Breadth_first_search(RectNode* rec,RectNode* par) // it needs to chan
             path.pop_back();
         }
         path.pop_back();
-      //  negh.second->set_passed(false);
+        //  negh.second->set_passed(false);
     }
     for(auto item: path)
         item->set_passed(true);
@@ -173,7 +173,44 @@ void Maze::create_maze()
             item->set_passed(false);
     path.clear();
 }
+void Maze::solveDFS(){
+    path.clear();
+    if(m==1&&n==1){
+        return;
+    }else{
+        qDebug()<<"DFS begins:";
+        Maze::Depth_first_search(matrix[0][0]);
+    }
+    for(auto item:path){
+        item->set_passed(true);
+    }
 
+}
+bool Maze::Depth_first_search(RectNode* head){
+    path.push_back(head);
+    if(head == matrix[m-1][n-1]){
+        return true;
+    }
+    if(head->real_neighbours().empty()==true){
+        path.pop_back();
+        return false;
+    }
+    for(auto [key , value]: head->real_neighbours()){
+        if(head != matrix[0][0]){ //to avoid circle back
+           // qDebug()<<"begin"<<(*path.begin())->x<<(*path.begin())->y<<" in if x="<<value->x<<" y="<<value->y;
+            if(value == *(path.end()-2)){
+                continue;
+            }
+        }
+        bool result =  Depth_first_search(value);
+        if(result){
+            qDebug()<<"I am :"<<head->x<<" "<<head->y;
+            return true;
+        }
+    }//searching that head completed without any success
+    path.pop_back();
+    return false;
+}
 bool Maze::is_any_rect_notpassed()
 {
     for(int i{0};i<m;i++){

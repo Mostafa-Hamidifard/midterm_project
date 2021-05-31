@@ -60,3 +60,8 @@ void maze_page::on_btn_bfs_clicked()
 {
     maze->solveBFS();
 }
+
+void maze_page::on_btn_dfs_clicked()
+{
+    maze->solveDFS();
+}

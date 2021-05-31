@@ -18,6 +18,7 @@ public:
     static void update_rect_nei_colors(RectNode *node);
     void set_passed(bool passed);
     bool get_passed();
+    std::map<int,RectNode*> real_neighbours();
 
     int x{};
     int y{};

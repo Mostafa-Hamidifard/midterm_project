@@ -141,4 +141,15 @@ bool RectNode::get_passed()
     return passed;
 }
 
+std::map<int, RectNode *> RectNode::real_neighbours()
+{
+    std::map<int,RectNode*> temp{};
+    for(auto [key ,value] : neighbours){
+        if(value != nullptr){
+            temp[key] = value;
+        }
+    }
+    return temp;
+}
+
 

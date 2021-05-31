@@ -20,6 +20,8 @@ public:
     void change_head(direction d);
     void solveBFS();
     bool Breadth_first_search(RectNode*,RectNode*);
+    void solveDFS();
+    bool Depth_first_search(RectNode* head);
 private:
     std::vector<int> neighbour_available(RectNode* rec);
     void create_maze();
