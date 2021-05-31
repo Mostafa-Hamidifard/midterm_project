@@ -83,48 +83,77 @@ void Maze::change_head(Maze::direction d)
 
 void Maze::solveBFS()
 {
-    clear_path();
-    if(path.back()==matrix[m-1][n-1]){
+    path.clear();
+    if(m==1&&n==1){
         return;
     }else{
         qDebug()<<"BFS begins:";
-        //   Maze::Breadth_first_search(path.back(),nullptr);
-    }
-
-}
-
-bool Maze::Breadth_first_search(RectNode* rec,RectNode* par) // it needs to change//1,2 should work!
-{
-    qDebug()<<"BFS begins with rect: x: "<<rec->x<<" y: "<<rec->y;
-    for(auto real_negh: rec->neighbours){
-        if(real_negh.second == nullptr||real_negh.second == par)
-            continue;
-        qDebug()<<"searching in neghs, neighbour: x: "<<real_negh.second->x<<" y: "<<real_negh.second->y;
-        path.push_back(real_negh.second);
-        if(real_negh.second == matrix[m-1][n-1]){
-            return true;
+        path.push_back(matrix[0][0]);
+        for(auto val :matrix[0][0]->real_neighbours()){
+            val->parent = matrix[0][0];
+            if(val == matrix[m-1][n-1]){
+                path.push_back(val);
+                val->set_passed(true);
+                return;
+            }
         }
-        //real_negh.second->set_passed(false);
-        path.pop_back();
+        Maze::Breadth_first_search(matrix[0][0]->real_neighbours());
     }
-    for(auto negh: rec->neighbours){
-        //negh.second->set_passed(true);
-        if(negh.second == nullptr || negh.second ==par)
-            continue;
-        path.push_back(negh.second);
-        for(auto item: negh.second->neighbours){
-            if(item.second == nullptr ||item.second == rec)
-                continue;
-            path.push_back(item.second);
-            if(Breadth_first_search(item.second,negh.second))
-                return true;
-            path.pop_back();
-        }
-        path.pop_back();
-        //  negh.second->set_passed(false);
-    }
-    for(auto item: path)
+    for(auto item:path){
         item->set_passed(true);
+    }
+}
+RectNode* Maze::Breadth_first_search(std::vector<RectNode*> parentList) // it needs to change//1,2 should work!
+{
+    qDebug()<<"breadth_first_search CALLED";
+    for(auto parent :parentList){
+        qDebug()<<"parent: x,y="<<parent->x<<", "<<parent->y;
+        for(auto child:parent->real_neighbours()){
+            qDebug()<<"     child: x,y="<<child->x<<", "<<child->y;
+        }
+    }
+    if(parentList.empty()){
+        qDebug()<<"parentList was empty";
+        return nullptr;
+    }
+    for(auto parent: parentList){
+        qDebug()<<"first loop with parent: x="<<parent->x<<" y="<<parent->y;
+        for(auto child : parent->real_neighbours()){
+            if(child == parent->parent){
+                continue;
+            }
+            qDebug()<<"child: x: "<<child->x<<" y: "<<child->y;
+            child->parent = parent;
+            if(child == matrix[m-1][n-1]){
+                path.push_back(child->parent);
+                path.push_back(child);
+                return child->parent;
+            }
+        }
+    }
+    qDebug()<<"first for ended";
+    std::vector<RectNode*> temp_par{};
+    for(auto parent: parentList){
+        for(auto child:parent->real_neighbours()){
+            if(child == parent->parent)
+                continue;
+            std::vector<RectNode*> real_neghs{child->real_neighbours()};
+            for(auto iter{real_neghs.begin()};iter<real_neghs.end();iter++){
+                if(*(iter) == parent){
+                    real_neghs.erase(iter);
+                    qDebug()<<"parent erased x,y:"<<parent->x<<" "<<parent->y;
+                }
+            }
+            temp_par.insert(temp_par.end(),real_neghs.begin(),real_neghs.end());
+        }
+    }
+    RectNode* result{Breadth_first_search(temp_par)};
+    if(result==nullptr){
+        qDebug()<<"didnt found anything!";
+        return nullptr; // didnt found anything(impossible)
+    }
+    path.push_back(result->parent);
+    return result->parent;
 }
 
 void Maze::create_maze()
@@ -184,7 +213,6 @@ void Maze::solveDFS(){
     for(auto item:path){
         item->set_passed(true);
     }
-
 }
 bool Maze::Depth_first_search(RectNode* head){
     path.push_back(head);
@@ -195,9 +223,8 @@ bool Maze::Depth_first_search(RectNode* head){
         path.pop_back();
         return false;
     }
-    for(auto [key , value]: head->real_neighbours()){
-        if(head != matrix[0][0]){ //to avoid circle back
-           // qDebug()<<"begin"<<(*path.begin())->x<<(*path.begin())->y<<" in if x="<<value->x<<" y="<<value->y;
+    for(auto  value: head->real_neighbours()){
+        if(head != matrix[0][0]){ //to avoid error loop
             if(value == *(path.end()-2)){
                 continue;
             }

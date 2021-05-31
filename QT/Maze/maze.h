@@ -19,7 +19,7 @@ public:
     enum direction{left=0,right=1,up=2,down=3};
     void change_head(direction d);
     void solveBFS();
-    bool Breadth_first_search(RectNode*,RectNode*);
+    RectNode* Breadth_first_search(std::vector<RectNode*> parents);
     void solveDFS();
     bool Depth_first_search(RectNode* head);
 private:

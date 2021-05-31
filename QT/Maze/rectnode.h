@@ -18,8 +18,8 @@ public:
     static void update_rect_nei_colors(RectNode *node);
     void set_passed(bool passed);
     bool get_passed();
-    std::map<int,RectNode*> real_neighbours();
-
+    std::vector<RectNode*> real_neighbours();
+    RectNode* parent{nullptr};
     int x{};
     int y{};
     QGraphicsRectItem * top_left_rec;

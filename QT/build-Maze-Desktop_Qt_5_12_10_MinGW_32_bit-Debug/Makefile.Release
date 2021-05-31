@@ -224,6 +224,239 @@ release/moc_maze_page.cpp: ../Maze/maze_page.h \
 		C:/Qt/Qt5.12.10/5.12.10/mingw73_32/include/QtCore/qfiledevice.h \
 		C:/Qt/Qt5.12.10/5.12.10/mingw73_32/include/QtGui/qvector2d.h \
 		C:/Qt/Qt5.12.10/5.12.10/mingw73_32/include/QtGui/qtouchdevice.h \
+		../Maze/maze.h \
+		../Maze/rectnode.h \
+		C:/Qt/Qt5.12.10/5.12.10/mingw73_32/include/QtWidgets/QGraphicsRectItem \
+		C:/Qt/Qt5.12.10/5.12.10/mingw73_32/include/QtWidgets/qgraphicsitem.h \
+		C:/Qt/Qt5.12.10/5.12.10/mingw73_32/include/QtGui/QtGui \
+		C:/Qt/Qt5.12.10/5.12.10/mingw73_32/include/QtGui/QtGuiDepends \
+		C:/Qt/Qt5.12.10/5.12.10/mingw73_32/include/QtCore/QtCore \
+		C:/Qt/Qt5.12.10/5.12.10/mingw73_32/include/QtCore/QtCoreDepends \
+		C:/Qt/Qt5.12.10/5.12.10/mingw73_32/include/QtCore/qabstractanimation.h \
+		C:/Qt/Qt5.12.10/5.12.10/mingw73_32/include/QtCore/qabstracteventdispatcher.h \
+		C:/Qt/Qt5.12.10/5.12.10/mingw73_32/include/QtCore/qeventloop.h \
+		C:/Qt/Qt5.12.10/5.12.10/mingw73_32/include/QtCore/qabstractitemmodel.h \
+		C:/Qt/Qt5.12.10/5.12.10/mingw73_32/include/QtCore/qabstractnativeeventfilter.h \
+		C:/Qt/Qt5.12.10/5.12.10/mingw73_32/include/QtCore/qabstractproxymodel.h \
+		C:/Qt/Qt5.12.10/5.12.10/mingw73_32/include/QtCore/qabstractstate.h \
+		C:/Qt/Qt5.12.10/5.12.10/mingw73_32/include/QtCore/qabstracttransition.h \
+		C:/Qt/Qt5.12.10/5.12.10/mingw73_32/include/QtCore/qanimationgroup.h \
+		C:/Qt/Qt5.12.10/5.12.10/mingw73_32/include/QtCore/qarraydataops.h \
+		C:/Qt/Qt5.12.10/5.12.10/mingw73_32/include/QtCore/qarraydatapointer.h \
+		C:/Qt/Qt5.12.10/5.12.10/mingw73_32/include/QtCore/qbasictimer.h \
+		C:/Qt/Qt5.12.10/5.12.10/mingw73_32/include/QtCore/qbitarray.h \
+		C:/Qt/Qt5.12.10/5.12.10/mingw73_32/include/QtCore/qbuffer.h \
+		C:/Qt/Qt5.12.10/5.12.10/mingw73_32/include/QtCore/qbytearraymatcher.h \
+		C:/Qt/Qt5.12.10/5.12.10/mingw73_32/include/QtCore/qcache.h \
+		C:/Qt/Qt5.12.10/5.12.10/mingw73_32/include/QtCore/qcborarray.h \
+		C:/Qt/Qt5.12.10/5.12.10/mingw73_32/include/QtCore/qcborvalue.h \
+		C:/Qt/Qt5.12.10/5.12.10/mingw73_32/include/QtCore/qdatetime.h \
+		C:/Qt/Qt5.12.10/5.12.10/mingw73_32/include/QtCore/qcborcommon.h \
+		C:/Qt/Qt5.12.10/5.12.10/mingw73_32/include/QtCore/qregularexpression.h \
+		C:/Qt/Qt5.12.10/5.12.10/mingw73_32/include/QtCore/quuid.h \
+		C:/Qt/Qt5.12.10/5.12.10/mingw73_32/include/QtCore/qcbormap.h \
+		C:/Qt/Qt5.12.10/5.12.10/mingw73_32/include/QtCore/qcborstream.h \
+		C:/Qt/Qt5.12.10/5.12.10/mingw73_32/include/QtCore/qfloat16.h \
+		C:/Qt/Qt5.12.10/5.12.10/mingw73_32/include/QtCore/qcollator.h \
+		C:/Qt/Qt5.12.10/5.12.10/mingw73_32/include/QtCore/qcommandlineoption.h \
+		C:/Qt/Qt5.12.10/5.12.10/mingw73_32/include/QtCore/qcommandlineparser.h \
+		C:/Qt/Qt5.12.10/5.12.10/mingw73_32/include/QtCore/qcoreapplication.h \
+		C:/Qt/Qt5.12.10/5.12.10/mingw73_32/include/QtCore/qcryptographichash.h \
+		C:/Qt/Qt5.12.10/5.12.10/mingw73_32/include/QtCore/qdeadlinetimer.h \
+		C:/Qt/Qt5.12.10/5.12.10/mingw73_32/include/QtCore/qelapsedtimer.h \
+		C:/Qt/Qt5.12.10/5.12.10/mingw73_32/include/QtCore/qdir.h \
+		C:/Qt/Qt5.12.10/5.12.10/mingw73_32/include/QtCore/qfileinfo.h \
+		C:/Qt/Qt5.12.10/5.12.10/mingw73_32/include/QtCore/qdiriterator.h \
+		C:/Qt/Qt5.12.10/5.12.10/mingw73_32/include/QtCore/qeasingcurve.h \
+		C:/Qt/Qt5.12.10/5.12.10/mingw73_32/include/QtCore/qendian.h \
+		C:/Qt/Qt5.12.10/5.12.10/mingw73_32/include/QtCore/qeventtransition.h \
+		C:/Qt/Qt5.12.10/5.12.10/mingw73_32/include/QtCore/qexception.h \
+		C:/Qt/Qt5.12.10/5.12.10/mingw73_32/include/QtCore/qfactoryinterface.h \
+		C:/Qt/Qt5.12.10/5.12.10/mingw73_32/include/QtCore/qfileselector.h \
+		C:/Qt/Qt5.12.10/5.12.10/mingw73_32/include/QtCore/QObject \
+		C:/Qt/Qt5.12.10/5.12.10/mingw73_32/include/QtCore/QStringList \
+		C:/Qt/Qt5.12.10/5.12.10/mingw73_32/include/QtCore/qfilesystemwatcher.h \
+		C:/Qt/Qt5.12.10/5.12.10/mingw73_32/include/QtCore/qfinalstate.h \
+		C:/Qt/Qt5.12.10/5.12.10/mingw73_32/include/QtCore/qfuture.h \
+		C:/Qt/Qt5.12.10/5.12.10/mingw73_32/include/QtCore/qfutureinterface.h \
+		C:/Qt/Qt5.12.10/5.12.10/mingw73_32/include/QtCore/qrunnable.h \
+		C:/Qt/Qt5.12.10/5.12.10/mingw73_32/include/QtCore/qresultstore.h \
+		C:/Qt/Qt5.12.10/5.12.10/mingw73_32/include/QtCore/qfuturesynchronizer.h \
+		C:/Qt/Qt5.12.10/5.12.10/mingw73_32/include/QtCore/qfuturewatcher.h \
+		C:/Qt/Qt5.12.10/5.12.10/mingw73_32/include/QtCore/qhistorystate.h \
+		C:/Qt/Qt5.12.10/5.12.10/mingw73_32/include/QtCore/qidentityproxymodel.h \
+		C:/Qt/Qt5.12.10/5.12.10/mingw73_32/include/QtCore/qisenum.h \
+		C:/Qt/Qt5.12.10/5.12.10/mingw73_32/include/QtCore/qitemselectionmodel.h \
+		C:/Qt/Qt5.12.10/5.12.10/mingw73_32/include/QtCore/qjsonarray.h \
+		C:/Qt/Qt5.12.10/5.12.10/mingw73_32/include/QtCore/qjsonvalue.h \
+		C:/Qt/Qt5.12.10/5.12.10/mingw73_32/include/QtCore/qjsondocument.h \
+		C:/Qt/Qt5.12.10/5.12.10/mingw73_32/include/QtCore/qjsonobject.h \
+		C:/Qt/Qt5.12.10/5.12.10/mingw73_32/include/QtCore/qlibrary.h \
+		C:/Qt/Qt5.12.10/5.12.10/mingw73_32/include/QtCore/qlibraryinfo.h \
+		C:/Qt/Qt5.12.10/5.12.10/mingw73_32/include/QtCore/qversionnumber.h \
+		C:/Qt/Qt5.12.10/5.12.10/mingw73_32/include/QtCore/qlinkedlist.h \
+		C:/Qt/Qt5.12.10/5.12.10/mingw73_32/include/QtCore/qlockfile.h \
+		C:/Qt/Qt5.12.10/5.12.10/mingw73_32/include/QtCore/qloggingcategory.h \
+		C:/Qt/Qt5.12.10/5.12.10/mingw73_32/include/QtCore/qmath.h \
+		C:/Qt/Qt5.12.10/5.12.10/mingw73_32/include/QtCore/qmessageauthenticationcode.h \
+		C:/Qt/Qt5.12.10/5.12.10/mingw73_32/include/QtCore/qmetaobject.h \
+		C:/Qt/Qt5.12.10/5.12.10/mingw73_32/include/QtCore/qmimedata.h \
+		C:/Qt/Qt5.12.10/5.12.10/mingw73_32/include/QtCore/qmimedatabase.h \
+		C:/Qt/Qt5.12.10/5.12.10/mingw73_32/include/QtCore/qmimetype.h \
+		C:/Qt/Qt5.12.10/5.12.10/mingw73_32/include/QtCore/qobjectcleanuphandler.h \
+		C:/Qt/Qt5.12.10/5.12.10/mingw73_32/include/QtCore/qoperatingsystemversion.h \
+		C:/Qt/Qt5.12.10/5.12.10/mingw73_32/include/QtCore/qparallelanimationgroup.h \
+		C:/Qt/Qt5.12.10/5.12.10/mingw73_32/include/QtCore/qpauseanimation.h \
+		C:/Qt/Qt5.12.10/5.12.10/mingw73_32/include/QtCore/qplugin.h \
+		C:/Qt/Qt5.12.10/5.12.10/mingw73_32/include/QtCore/qpointer.h \
+		C:/Qt/Qt5.12.10/5.12.10/mingw73_32/include/QtCore/qpluginloader.h \
+		C:/Qt/Qt5.12.10/5.12.10/mingw73_32/include/QtCore/qprocess.h \
+		C:/Qt/Qt5.12.10/5.12.10/mingw73_32/include/QtCore/qpropertyanimation.h \
+		C:/Qt/Qt5.12.10/5.12.10/mingw73_32/include/QtCore/qvariantanimation.h \
+		C:/Qt/Qt5.12.10/5.12.10/mingw73_32/include/QtCore/qqueue.h \
+		C:/Qt/Qt5.12.10/5.12.10/mingw73_32/include/QtCore/qrandom.h \
+		C:/Qt/Qt5.12.10/5.12.10/mingw73_32/include/QtCore/qreadwritelock.h \
+		C:/Qt/Qt5.12.10/5.12.10/mingw73_32/include/QtCore/qresource.h \
+		C:/Qt/Qt5.12.10/5.12.10/mingw73_32/include/QtCore/qsavefile.h \
+		C:/Qt/Qt5.12.10/5.12.10/mingw73_32/include/QtCore/qscopedvaluerollback.h \
+		C:/Qt/Qt5.12.10/5.12.10/mingw73_32/include/QtCore/qscopeguard.h \
+		C:/Qt/Qt5.12.10/5.12.10/mingw73_32/include/QtCore/qsemaphore.h \
+		C:/Qt/Qt5.12.10/5.12.10/mingw73_32/include/QtCore/qsequentialanimationgroup.h \
+		C:/Qt/Qt5.12.10/5.12.10/mingw73_32/include/QtCore/qsettings.h \
+		C:/Qt/Qt5.12.10/5.12.10/mingw73_32/include/QtCore/qsharedmemory.h \
+		C:/Qt/Qt5.12.10/5.12.10/mingw73_32/include/QtCore/qsignalmapper.h \
+		C:/Qt/Qt5.12.10/5.12.10/mingw73_32/include/QtCore/qsignaltransition.h \
+		C:/Qt/Qt5.12.10/5.12.10/mingw73_32/include/QtCore/qsocketnotifier.h \
+		C:/Qt/Qt5.12.10/5.12.10/mingw73_32/include/QtCore/qsortfilterproxymodel.h \
+		C:/Qt/Qt5.12.10/5.12.10/mingw73_32/include/QtCore/qstack.h \
+		C:/Qt/Qt5.12.10/5.12.10/mingw73_32/include/QtCore/qstandardpaths.h \
+		C:/Qt/Qt5.12.10/5.12.10/mingw73_32/include/QtCore/qstate.h \
+		C:/Qt/Qt5.12.10/5.12.10/mingw73_32/include/QtCore/qstatemachine.h \
+		C:/Qt/Qt5.12.10/5.12.10/mingw73_32/include/QtCore/qstorageinfo.h \
+		C:/Qt/Qt5.12.10/5.12.10/mingw73_32/include/QtCore/qstringlistmodel.h \
+		C:/Qt/Qt5.12.10/5.12.10/mingw73_32/include/QtCore/qsystemsemaphore.h \
+		C:/Qt/Qt5.12.10/5.12.10/mingw73_32/include/QtCore/qtemporarydir.h \
+		C:/Qt/Qt5.12.10/5.12.10/mingw73_32/include/QtCore/qtemporaryfile.h \
+		C:/Qt/Qt5.12.10/5.12.10/mingw73_32/include/QtCore/qtextboundaryfinder.h \
+		C:/Qt/Qt5.12.10/5.12.10/mingw73_32/include/QtCore/qtextcodec.h \
+		C:/Qt/Qt5.12.10/5.12.10/mingw73_32/include/QtCore/qthread.h \
+		C:/Qt/Qt5.12.10/5.12.10/mingw73_32/include/QtCore/qthreadpool.h \
+		C:/Qt/Qt5.12.10/5.12.10/mingw73_32/include/QtCore/qthreadstorage.h \
+		C:/Qt/Qt5.12.10/5.12.10/mingw73_32/include/QtCore/qtimeline.h \
+		C:/Qt/Qt5.12.10/5.12.10/mingw73_32/include/QtCore/qtimer.h \
+		C:/Qt/Qt5.12.10/5.12.10/mingw73_32/include/QtCore/qtimezone.h \
+		C:/Qt/Qt5.12.10/5.12.10/mingw73_32/include/QtCore/qtranslator.h \
+		C:/Qt/Qt5.12.10/5.12.10/mingw73_32/include/QtCore/qtypetraits.h \
+		C:/Qt/Qt5.12.10/5.12.10/mingw73_32/include/QtCore/qwaitcondition.h \
+		C:/Qt/Qt5.12.10/5.12.10/mingw73_32/include/QtCore/qwineventnotifier.h \
+		C:/Qt/Qt5.12.10/5.12.10/mingw73_32/include/QtCore/qxmlstream.h \
+		C:/Qt/Qt5.12.10/5.12.10/mingw73_32/include/QtCore/qtcoreversion.h \
+		C:/Qt/Qt5.12.10/5.12.10/mingw73_32/include/QtGui/qabstracttextdocumentlayout.h \
+		C:/Qt/Qt5.12.10/5.12.10/mingw73_32/include/QtGui/qtextlayout.h \
+		C:/Qt/Qt5.12.10/5.12.10/mingw73_32/include/QtGui/qtextformat.h \
+		C:/Qt/Qt5.12.10/5.12.10/mingw73_32/include/QtGui/qpen.h \
+		C:/Qt/Qt5.12.10/5.12.10/mingw73_32/include/QtGui/qtextoption.h \
+		C:/Qt/Qt5.12.10/5.12.10/mingw73_32/include/QtGui/qglyphrun.h \
+		C:/Qt/Qt5.12.10/5.12.10/mingw73_32/include/QtGui/qrawfont.h \
+		C:/Qt/Qt5.12.10/5.12.10/mingw73_32/include/QtGui/qfontdatabase.h \
+		C:/Qt/Qt5.12.10/5.12.10/mingw73_32/include/QtGui/qtextcursor.h \
+		C:/Qt/Qt5.12.10/5.12.10/mingw73_32/include/QtGui/qtextdocument.h \
+		C:/Qt/Qt5.12.10/5.12.10/mingw73_32/include/QtGui/qaccessible.h \
+		C:/Qt/Qt5.12.10/5.12.10/mingw73_32/include/QtGui/qaccessiblebridge.h \
+		C:/Qt/Qt5.12.10/5.12.10/mingw73_32/include/QtGui/qaccessibleobject.h \
+		C:/Qt/Qt5.12.10/5.12.10/mingw73_32/include/QtGui/qaccessibleplugin.h \
+		C:/Qt/Qt5.12.10/5.12.10/mingw73_32/include/QtGui/qbackingstore.h \
+		C:/Qt/Qt5.12.10/5.12.10/mingw73_32/include/QtGui/qwindow.h \
+		C:/Qt/Qt5.12.10/5.12.10/mingw73_32/include/QtCore/QEvent \
+		C:/Qt/Qt5.12.10/5.12.10/mingw73_32/include/QtCore/QMargins \
+		C:/Qt/Qt5.12.10/5.12.10/mingw73_32/include/QtCore/QRect \
+		C:/Qt/Qt5.12.10/5.12.10/mingw73_32/include/QtGui/qsurface.h \
+		C:/Qt/Qt5.12.10/5.12.10/mingw73_32/include/QtGui/qsurfaceformat.h \
+		C:/Qt/Qt5.12.10/5.12.10/mingw73_32/include/QtGui/qicon.h \
+		C:/Qt/Qt5.12.10/5.12.10/mingw73_32/include/QtGui/qbitmap.h \
+		C:/Qt/Qt5.12.10/5.12.10/mingw73_32/include/QtGui/qclipboard.h \
+		C:/Qt/Qt5.12.10/5.12.10/mingw73_32/include/QtGui/qdesktopservices.h \
+		C:/Qt/Qt5.12.10/5.12.10/mingw73_32/include/QtGui/qdrag.h \
+		C:/Qt/Qt5.12.10/5.12.10/mingw73_32/include/QtGui/qgenericmatrix.h \
+		C:/Qt/Qt5.12.10/5.12.10/mingw73_32/include/QtGui/qgenericplugin.h \
+		C:/Qt/Qt5.12.10/5.12.10/mingw73_32/include/QtGui/qgenericpluginfactory.h \
+		C:/Qt/Qt5.12.10/5.12.10/mingw73_32/include/QtGui/qguiapplication.h \
+		C:/Qt/Qt5.12.10/5.12.10/mingw73_32/include/QtGui/qinputmethod.h \
+		C:/Qt/Qt5.12.10/5.12.10/mingw73_32/include/QtGui/qiconengine.h \
+		C:/Qt/Qt5.12.10/5.12.10/mingw73_32/include/QtGui/qiconengineplugin.h \
+		C:/Qt/Qt5.12.10/5.12.10/mingw73_32/include/QtGui/qimageiohandler.h \
+		C:/Qt/Qt5.12.10/5.12.10/mingw73_32/include/QtGui/qimagereader.h \
+		C:/Qt/Qt5.12.10/5.12.10/mingw73_32/include/QtGui/qimagewriter.h \
+		C:/Qt/Qt5.12.10/5.12.10/mingw73_32/include/QtGui/qmatrix4x4.h \
+		C:/Qt/Qt5.12.10/5.12.10/mingw73_32/include/QtGui/qvector3d.h \
+		C:/Qt/Qt5.12.10/5.12.10/mingw73_32/include/QtGui/qvector4d.h \
+		C:/Qt/Qt5.12.10/5.12.10/mingw73_32/include/QtGui/qquaternion.h \
+		C:/Qt/Qt5.12.10/5.12.10/mingw73_32/include/QtGui/qmovie.h \
+		C:/Qt/Qt5.12.10/5.12.10/mingw73_32/include/QtGui/qoffscreensurface.h \
+		C:/Qt/Qt5.12.10/5.12.10/mingw73_32/include/QtGui/qopengl.h \
+		C:/Qt/Qt5.12.10/5.12.10/mingw73_32/include/QtCore/qt_windows.h \
+		C:/Qt/Qt5.12.10/5.12.10/mingw73_32/include/QtANGLE/GLES3/gl3.h \
+		C:/Qt/Qt5.12.10/5.12.10/mingw73_32/include/QtANGLE/GLES3/gl3platform.h \
+		C:/Qt/Qt5.12.10/5.12.10/mingw73_32/include/QtANGLE/KHR/khrplatform.h \
+		C:/Qt/Qt5.12.10/5.12.10/mingw73_32/include/QtANGLE/GLES2/gl2.h \
+		C:/Qt/Qt5.12.10/5.12.10/mingw73_32/include/QtANGLE/GLES2/gl2platform.h \
+		C:/Qt/Qt5.12.10/5.12.10/mingw73_32/include/QtGui/qopengles2ext.h \
+		C:/Qt/Qt5.12.10/5.12.10/mingw73_32/include/QtGui/qopenglext.h \
+		C:/Qt/Qt5.12.10/5.12.10/mingw73_32/include/QtGui/qopenglbuffer.h \
+		C:/Qt/Qt5.12.10/5.12.10/mingw73_32/include/QtGui/qopenglcontext.h \
+		C:/Qt/Qt5.12.10/5.12.10/mingw73_32/include/QtCore/QScopedPointer \
+		C:/Qt/Qt5.12.10/5.12.10/mingw73_32/include/QtGui/QSurfaceFormat \
+		C:/Qt/Qt5.12.10/5.12.10/mingw73_32/include/QtGui/qopenglversionfunctions.h \
+		C:/Qt/Qt5.12.10/5.12.10/mingw73_32/include/QtGui/qopengldebug.h \
+		C:/Qt/Qt5.12.10/5.12.10/mingw73_32/include/QtGui/qopenglextrafunctions.h \
+		C:/Qt/Qt5.12.10/5.12.10/mingw73_32/include/QtGui/qopenglfunctions.h \
+		C:/Qt/Qt5.12.10/5.12.10/mingw73_32/include/QtGui/qopenglframebufferobject.h \
+		C:/Qt/Qt5.12.10/5.12.10/mingw73_32/include/QtGui/qopenglpaintdevice.h \
+		C:/Qt/Qt5.12.10/5.12.10/mingw73_32/include/QtGui/qopenglpixeltransferoptions.h \
+		C:/Qt/Qt5.12.10/5.12.10/mingw73_32/include/QtCore/QSharedDataPointer \
+		C:/Qt/Qt5.12.10/5.12.10/mingw73_32/include/QtGui/qopenglshaderprogram.h \
+		C:/Qt/Qt5.12.10/5.12.10/mingw73_32/include/QtGui/qopengltexture.h \
+		C:/Qt/Qt5.12.10/5.12.10/mingw73_32/include/QtGui/qopengltextureblitter.h \
+		C:/Qt/Qt5.12.10/5.12.10/mingw73_32/include/QtGui/QMatrix3x3 \
+		C:/Qt/Qt5.12.10/5.12.10/mingw73_32/include/QtGui/QMatrix4x4 \
+		C:/Qt/Qt5.12.10/5.12.10/mingw73_32/include/QtGui/qopengltimerquery.h \
+		C:/Qt/Qt5.12.10/5.12.10/mingw73_32/include/QtGui/qopenglvertexarrayobject.h \
+		C:/Qt/Qt5.12.10/5.12.10/mingw73_32/include/QtGui/qopenglwindow.h \
+		C:/Qt/Qt5.12.10/5.12.10/mingw73_32/include/QtGui/QPaintDeviceWindow \
+		C:/Qt/Qt5.12.10/5.12.10/mingw73_32/include/QtGui/qpaintdevicewindow.h \
+		C:/Qt/Qt5.12.10/5.12.10/mingw73_32/include/QtGui/QWindow \
+		C:/Qt/Qt5.12.10/5.12.10/mingw73_32/include/QtGui/QPaintDevice \
+		C:/Qt/Qt5.12.10/5.12.10/mingw73_32/include/QtGui/QOpenGLContext \
+		C:/Qt/Qt5.12.10/5.12.10/mingw73_32/include/QtGui/QImage \
+		C:/Qt/Qt5.12.10/5.12.10/mingw73_32/include/QtGui/qpagedpaintdevice.h \
+		C:/Qt/Qt5.12.10/5.12.10/mingw73_32/include/QtGui/qpagelayout.h \
+		C:/Qt/Qt5.12.10/5.12.10/mingw73_32/include/QtGui/qpagesize.h \
+		C:/Qt/Qt5.12.10/5.12.10/mingw73_32/include/QtGui/qpaintengine.h \
+		C:/Qt/Qt5.12.10/5.12.10/mingw73_32/include/QtGui/qpainter.h \
+		C:/Qt/Qt5.12.10/5.12.10/mingw73_32/include/QtGui/qpdfwriter.h \
+		C:/Qt/Qt5.12.10/5.12.10/mingw73_32/include/QtGui/qpicture.h \
+		C:/Qt/Qt5.12.10/5.12.10/mingw73_32/include/QtGui/qpictureformatplugin.h \
+		C:/Qt/Qt5.12.10/5.12.10/mingw73_32/include/QtGui/qpixmapcache.h \
+		C:/Qt/Qt5.12.10/5.12.10/mingw73_32/include/QtGui/qrasterwindow.h \
+		C:/Qt/Qt5.12.10/5.12.10/mingw73_32/include/QtGui/qscreen.h \
+		C:/Qt/Qt5.12.10/5.12.10/mingw73_32/include/QtCore/QList \
+		C:/Qt/Qt5.12.10/5.12.10/mingw73_32/include/QtCore/QSize \
+		C:/Qt/Qt5.12.10/5.12.10/mingw73_32/include/QtCore/QSizeF \
+		C:/Qt/Qt5.12.10/5.12.10/mingw73_32/include/QtGui/QTransform \
+		C:/Qt/Qt5.12.10/5.12.10/mingw73_32/include/QtGui/qsessionmanager.h \
+		C:/Qt/Qt5.12.10/5.12.10/mingw73_32/include/QtGui/qstandarditemmodel.h \
+		C:/Qt/Qt5.12.10/5.12.10/mingw73_32/include/QtGui/qstatictext.h \
+		C:/Qt/Qt5.12.10/5.12.10/mingw73_32/include/QtGui/qstylehints.h \
+		C:/Qt/Qt5.12.10/5.12.10/mingw73_32/include/QtGui/qsyntaxhighlighter.h \
+		C:/Qt/Qt5.12.10/5.12.10/mingw73_32/include/QtGui/qtextobject.h \
+		C:/Qt/Qt5.12.10/5.12.10/mingw73_32/include/QtGui/qtextdocumentfragment.h \
+		C:/Qt/Qt5.12.10/5.12.10/mingw73_32/include/QtGui/qtextdocumentwriter.h \
+		C:/Qt/Qt5.12.10/5.12.10/mingw73_32/include/QtGui/qtextlist.h \
+		C:/Qt/Qt5.12.10/5.12.10/mingw73_32/include/QtGui/qtexttable.h \
+		C:/Qt/Qt5.12.10/5.12.10/mingw73_32/include/QtGui/qvalidator.h \
+		C:/Qt/Qt5.12.10/5.12.10/mingw73_32/include/QtGui/qtguiversion.h \
+		C:/Qt/Qt5.12.10/5.12.10/mingw73_32/include/QtWidgets/QGraphicsScene \
+		C:/Qt/Qt5.12.10/5.12.10/mingw73_32/include/QtWidgets/qgraphicsscene.h \
 		release/moc_predefs.h \
 		C:/Qt/Qt5.12.10/5.12.10/mingw73_32/bin/moc.exe
 	C:\Qt\Qt5.12.10\5.12.10\mingw73_32\bin\moc.exe $(DEFINES) --include "E:/6th semeter/Advanced programming/projects/midterm_project/QT/build-Maze-Desktop_Qt_5_12_10_MinGW_32_bit-Debug/release/moc_predefs.h" -IC:/Qt/Qt5.12.10/5.12.10/mingw73_32/mkspecs/win32-g++ -I"E:/6th semeter/Advanced programming/projects/midterm_project/QT/Maze" -IC:/Qt/Qt5.12.10/5.12.10/mingw73_32/include -IC:/Qt/Qt5.12.10/5.12.10/mingw73_32/include/QtWidgets -IC:/Qt/Qt5.12.10/5.12.10/mingw73_32/include/QtGui -IC:/Qt/Qt5.12.10/5.12.10/mingw73_32/include/QtANGLE -IC:/Qt/Qt5.12.10/5.12.10/mingw73_32/include/QtCore -I. -IC:/Qt/Qt5.12.10/Tools/mingw730_32/lib/gcc/i686-w64-mingw32/7.3.0/include/c++ -IC:/Qt/Qt5.12.10/Tools/mingw730_32/lib/gcc/i686-w64-mingw32/7.3.0/include/c++/i686-w64-mingw32 -IC:/Qt/Qt5.12.10/Tools/mingw730_32/lib/gcc/i686-w64-mingw32/7.3.0/include/c++/backward -IC:/Qt/Qt5.12.10/Tools/mingw730_32/lib/gcc/i686-w64-mingw32/7.3.0/include -IC:/Qt/Qt5.12.10/Tools/mingw730_32/lib/gcc/i686-w64-mingw32/7.3.0/include-fixed -IC:/Qt/Qt5.12.10/Tools/mingw730_32/i686-w64-mingw32/include ..\Maze\maze_page.h -o release\moc_maze_page.cpp
@@ -808,7 +1041,9 @@ release/maze.o: ../Maze/maze.cpp ../Maze/maze.h \
 		C:/Qt/Qt5.12.10/5.12.10/mingw73_32/include/QtGui/qvalidator.h \
 		C:/Qt/Qt5.12.10/5.12.10/mingw73_32/include/QtGui/qtguiversion.h \
 		C:/Qt/Qt5.12.10/5.12.10/mingw73_32/include/QtWidgets/QGraphicsScene \
-		C:/Qt/Qt5.12.10/5.12.10/mingw73_32/include/QtWidgets/qgraphicsscene.h
+		C:/Qt/Qt5.12.10/5.12.10/mingw73_32/include/QtWidgets/qgraphicsscene.h \
+		C:/Qt/Qt5.12.10/5.12.10/mingw73_32/include/QtCore/QDebug \
+		C:/Qt/Qt5.12.10/5.12.10/mingw73_32/include/QtCore/QThread
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o release\maze.o ..\Maze\maze.cpp
 
 release/maze_page.o: ../Maze/maze_page.cpp ../Maze/maze_page.h \
@@ -916,42 +1151,17 @@ release/maze_page.o: ../Maze/maze_page.cpp ../Maze/maze_page.h \
 		C:/Qt/Qt5.12.10/5.12.10/mingw73_32/include/QtCore/qfiledevice.h \
 		C:/Qt/Qt5.12.10/5.12.10/mingw73_32/include/QtGui/qvector2d.h \
 		C:/Qt/Qt5.12.10/5.12.10/mingw73_32/include/QtGui/qtouchdevice.h \
-		ui_maze_page.h \
-		C:/Qt/Qt5.12.10/5.12.10/mingw73_32/include/QtCore/QVariant \
-		C:/Qt/Qt5.12.10/5.12.10/mingw73_32/include/QtWidgets/QApplication \
-		C:/Qt/Qt5.12.10/5.12.10/mingw73_32/include/QtWidgets/qapplication.h \
-		C:/Qt/Qt5.12.10/5.12.10/mingw73_32/include/QtCore/qcoreapplication.h \
-		C:/Qt/Qt5.12.10/5.12.10/mingw73_32/include/QtCore/qeventloop.h \
-		C:/Qt/Qt5.12.10/5.12.10/mingw73_32/include/QtWidgets/qdesktopwidget.h \
-		C:/Qt/Qt5.12.10/5.12.10/mingw73_32/include/QtGui/qguiapplication.h \
-		C:/Qt/Qt5.12.10/5.12.10/mingw73_32/include/QtGui/qinputmethod.h \
-		C:/Qt/Qt5.12.10/5.12.10/mingw73_32/include/QtWidgets/QGraphicsView \
-		C:/Qt/Qt5.12.10/5.12.10/mingw73_32/include/QtWidgets/qgraphicsview.h \
-		C:/Qt/Qt5.12.10/5.12.10/mingw73_32/include/QtGui/qpainter.h \
-		C:/Qt/Qt5.12.10/5.12.10/mingw73_32/include/QtGui/qtextoption.h \
-		C:/Qt/Qt5.12.10/5.12.10/mingw73_32/include/QtGui/qpen.h \
-		C:/Qt/Qt5.12.10/5.12.10/mingw73_32/include/QtWidgets/qscrollarea.h \
-		C:/Qt/Qt5.12.10/5.12.10/mingw73_32/include/QtWidgets/qabstractscrollarea.h \
-		C:/Qt/Qt5.12.10/5.12.10/mingw73_32/include/QtWidgets/qframe.h \
-		C:/Qt/Qt5.12.10/5.12.10/mingw73_32/include/QtWidgets/qgraphicsscene.h \
-		C:/Qt/Qt5.12.10/5.12.10/mingw73_32/include/QtWidgets/QGridLayout \
-		C:/Qt/Qt5.12.10/5.12.10/mingw73_32/include/QtWidgets/qgridlayout.h \
-		C:/Qt/Qt5.12.10/5.12.10/mingw73_32/include/QtWidgets/qlayout.h \
-		C:/Qt/Qt5.12.10/5.12.10/mingw73_32/include/QtWidgets/qlayoutitem.h \
-		C:/Qt/Qt5.12.10/5.12.10/mingw73_32/include/QtWidgets/qboxlayout.h \
-		C:/Qt/Qt5.12.10/5.12.10/mingw73_32/include/QtWidgets/QHBoxLayout \
-		C:/Qt/Qt5.12.10/5.12.10/mingw73_32/include/QtWidgets/QPushButton \
-		C:/Qt/Qt5.12.10/5.12.10/mingw73_32/include/QtWidgets/qpushbutton.h \
-		C:/Qt/Qt5.12.10/5.12.10/mingw73_32/include/QtWidgets/qabstractbutton.h \
-		C:/Qt/Qt5.12.10/5.12.10/mingw73_32/include/QtGui/qicon.h \
-		C:/Qt/Qt5.12.10/5.12.10/mingw73_32/include/QtWidgets/QSpacerItem \
-		C:/Qt/Qt5.12.10/5.12.10/mingw73_32/include/QtWidgets/QVBoxLayout \
+		../Maze/maze.h \
+		../Maze/rectnode.h \
+		C:/Qt/Qt5.12.10/5.12.10/mingw73_32/include/QtWidgets/QGraphicsRectItem \
+		C:/Qt/Qt5.12.10/5.12.10/mingw73_32/include/QtWidgets/qgraphicsitem.h \
 		C:/Qt/Qt5.12.10/5.12.10/mingw73_32/include/QtGui/QtGui \
 		C:/Qt/Qt5.12.10/5.12.10/mingw73_32/include/QtGui/QtGuiDepends \
 		C:/Qt/Qt5.12.10/5.12.10/mingw73_32/include/QtCore/QtCore \
 		C:/Qt/Qt5.12.10/5.12.10/mingw73_32/include/QtCore/QtCoreDepends \
 		C:/Qt/Qt5.12.10/5.12.10/mingw73_32/include/QtCore/qabstractanimation.h \
 		C:/Qt/Qt5.12.10/5.12.10/mingw73_32/include/QtCore/qabstracteventdispatcher.h \
+		C:/Qt/Qt5.12.10/5.12.10/mingw73_32/include/QtCore/qeventloop.h \
 		C:/Qt/Qt5.12.10/5.12.10/mingw73_32/include/QtCore/qabstractitemmodel.h \
 		C:/Qt/Qt5.12.10/5.12.10/mingw73_32/include/QtCore/qabstractnativeeventfilter.h \
 		C:/Qt/Qt5.12.10/5.12.10/mingw73_32/include/QtCore/qabstractproxymodel.h \
@@ -977,6 +1187,7 @@ release/maze_page.o: ../Maze/maze_page.cpp ../Maze/maze_page.h \
 		C:/Qt/Qt5.12.10/5.12.10/mingw73_32/include/QtCore/qcollator.h \
 		C:/Qt/Qt5.12.10/5.12.10/mingw73_32/include/QtCore/qcommandlineoption.h \
 		C:/Qt/Qt5.12.10/5.12.10/mingw73_32/include/QtCore/qcommandlineparser.h \
+		C:/Qt/Qt5.12.10/5.12.10/mingw73_32/include/QtCore/qcoreapplication.h \
 		C:/Qt/Qt5.12.10/5.12.10/mingw73_32/include/QtCore/qcryptographichash.h \
 		C:/Qt/Qt5.12.10/5.12.10/mingw73_32/include/QtCore/qdeadlinetimer.h \
 		C:/Qt/Qt5.12.10/5.12.10/mingw73_32/include/QtCore/qelapsedtimer.h \
@@ -1070,6 +1281,8 @@ release/maze_page.o: ../Maze/maze_page.cpp ../Maze/maze_page.h \
 		C:/Qt/Qt5.12.10/5.12.10/mingw73_32/include/QtGui/qabstracttextdocumentlayout.h \
 		C:/Qt/Qt5.12.10/5.12.10/mingw73_32/include/QtGui/qtextlayout.h \
 		C:/Qt/Qt5.12.10/5.12.10/mingw73_32/include/QtGui/qtextformat.h \
+		C:/Qt/Qt5.12.10/5.12.10/mingw73_32/include/QtGui/qpen.h \
+		C:/Qt/Qt5.12.10/5.12.10/mingw73_32/include/QtGui/qtextoption.h \
 		C:/Qt/Qt5.12.10/5.12.10/mingw73_32/include/QtGui/qglyphrun.h \
 		C:/Qt/Qt5.12.10/5.12.10/mingw73_32/include/QtGui/qrawfont.h \
 		C:/Qt/Qt5.12.10/5.12.10/mingw73_32/include/QtGui/qfontdatabase.h \
@@ -1086,6 +1299,7 @@ release/maze_page.o: ../Maze/maze_page.cpp ../Maze/maze_page.h \
 		C:/Qt/Qt5.12.10/5.12.10/mingw73_32/include/QtCore/QRect \
 		C:/Qt/Qt5.12.10/5.12.10/mingw73_32/include/QtGui/qsurface.h \
 		C:/Qt/Qt5.12.10/5.12.10/mingw73_32/include/QtGui/qsurfaceformat.h \
+		C:/Qt/Qt5.12.10/5.12.10/mingw73_32/include/QtGui/qicon.h \
 		C:/Qt/Qt5.12.10/5.12.10/mingw73_32/include/QtGui/qbitmap.h \
 		C:/Qt/Qt5.12.10/5.12.10/mingw73_32/include/QtGui/qclipboard.h \
 		C:/Qt/Qt5.12.10/5.12.10/mingw73_32/include/QtGui/qdesktopservices.h \
@@ -1093,6 +1307,8 @@ release/maze_page.o: ../Maze/maze_page.cpp ../Maze/maze_page.h \
 		C:/Qt/Qt5.12.10/5.12.10/mingw73_32/include/QtGui/qgenericmatrix.h \
 		C:/Qt/Qt5.12.10/5.12.10/mingw73_32/include/QtGui/qgenericplugin.h \
 		C:/Qt/Qt5.12.10/5.12.10/mingw73_32/include/QtGui/qgenericpluginfactory.h \
+		C:/Qt/Qt5.12.10/5.12.10/mingw73_32/include/QtGui/qguiapplication.h \
+		C:/Qt/Qt5.12.10/5.12.10/mingw73_32/include/QtGui/qinputmethod.h \
 		C:/Qt/Qt5.12.10/5.12.10/mingw73_32/include/QtGui/qiconengine.h \
 		C:/Qt/Qt5.12.10/5.12.10/mingw73_32/include/QtGui/qiconengineplugin.h \
 		C:/Qt/Qt5.12.10/5.12.10/mingw73_32/include/QtGui/qimageiohandler.h \
@@ -1143,6 +1359,7 @@ release/maze_page.o: ../Maze/maze_page.cpp ../Maze/maze_page.h \
 		C:/Qt/Qt5.12.10/5.12.10/mingw73_32/include/QtGui/qpagelayout.h \
 		C:/Qt/Qt5.12.10/5.12.10/mingw73_32/include/QtGui/qpagesize.h \
 		C:/Qt/Qt5.12.10/5.12.10/mingw73_32/include/QtGui/qpaintengine.h \
+		C:/Qt/Qt5.12.10/5.12.10/mingw73_32/include/QtGui/qpainter.h \
 		C:/Qt/Qt5.12.10/5.12.10/mingw73_32/include/QtGui/qpdfwriter.h \
 		C:/Qt/Qt5.12.10/5.12.10/mingw73_32/include/QtGui/qpicture.h \
 		C:/Qt/Qt5.12.10/5.12.10/mingw73_32/include/QtGui/qpictureformatplugin.h \
@@ -1165,13 +1382,31 @@ release/maze_page.o: ../Maze/maze_page.cpp ../Maze/maze_page.h \
 		C:/Qt/Qt5.12.10/5.12.10/mingw73_32/include/QtGui/qtexttable.h \
 		C:/Qt/Qt5.12.10/5.12.10/mingw73_32/include/QtGui/qvalidator.h \
 		C:/Qt/Qt5.12.10/5.12.10/mingw73_32/include/QtGui/qtguiversion.h \
-		C:/Qt/Qt5.12.10/5.12.10/mingw73_32/include/QtWidgets/QGraphicsRectItem \
-		C:/Qt/Qt5.12.10/5.12.10/mingw73_32/include/QtWidgets/qgraphicsitem.h \
-		C:/Qt/Qt5.12.10/5.12.10/mingw73_32/include/QtGui/QBrush \
-		C:/Qt/Qt5.12.10/5.12.10/mingw73_32/include/QtWidgets/QGraphicsLineItem \
-		../Maze/rectnode.h \
 		C:/Qt/Qt5.12.10/5.12.10/mingw73_32/include/QtWidgets/QGraphicsScene \
-		../Maze/maze.h
+		C:/Qt/Qt5.12.10/5.12.10/mingw73_32/include/QtWidgets/qgraphicsscene.h \
+		ui_maze_page.h \
+		C:/Qt/Qt5.12.10/5.12.10/mingw73_32/include/QtCore/QVariant \
+		C:/Qt/Qt5.12.10/5.12.10/mingw73_32/include/QtWidgets/QApplication \
+		C:/Qt/Qt5.12.10/5.12.10/mingw73_32/include/QtWidgets/qapplication.h \
+		C:/Qt/Qt5.12.10/5.12.10/mingw73_32/include/QtWidgets/qdesktopwidget.h \
+		C:/Qt/Qt5.12.10/5.12.10/mingw73_32/include/QtWidgets/QGraphicsView \
+		C:/Qt/Qt5.12.10/5.12.10/mingw73_32/include/QtWidgets/qgraphicsview.h \
+		C:/Qt/Qt5.12.10/5.12.10/mingw73_32/include/QtWidgets/qscrollarea.h \
+		C:/Qt/Qt5.12.10/5.12.10/mingw73_32/include/QtWidgets/qabstractscrollarea.h \
+		C:/Qt/Qt5.12.10/5.12.10/mingw73_32/include/QtWidgets/qframe.h \
+		C:/Qt/Qt5.12.10/5.12.10/mingw73_32/include/QtWidgets/QGridLayout \
+		C:/Qt/Qt5.12.10/5.12.10/mingw73_32/include/QtWidgets/qgridlayout.h \
+		C:/Qt/Qt5.12.10/5.12.10/mingw73_32/include/QtWidgets/qlayout.h \
+		C:/Qt/Qt5.12.10/5.12.10/mingw73_32/include/QtWidgets/qlayoutitem.h \
+		C:/Qt/Qt5.12.10/5.12.10/mingw73_32/include/QtWidgets/qboxlayout.h \
+		C:/Qt/Qt5.12.10/5.12.10/mingw73_32/include/QtWidgets/QHBoxLayout \
+		C:/Qt/Qt5.12.10/5.12.10/mingw73_32/include/QtWidgets/QPushButton \
+		C:/Qt/Qt5.12.10/5.12.10/mingw73_32/include/QtWidgets/qpushbutton.h \
+		C:/Qt/Qt5.12.10/5.12.10/mingw73_32/include/QtWidgets/qabstractbutton.h \
+		C:/Qt/Qt5.12.10/5.12.10/mingw73_32/include/QtWidgets/QSpacerItem \
+		C:/Qt/Qt5.12.10/5.12.10/mingw73_32/include/QtWidgets/QVBoxLayout \
+		C:/Qt/Qt5.12.10/5.12.10/mingw73_32/include/QtGui/QBrush \
+		C:/Qt/Qt5.12.10/5.12.10/mingw73_32/include/QtWidgets/QGraphicsLineItem
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o release\maze_page.o ..\Maze\maze_page.cpp
 
 release/rectnode.o: ../Maze/rectnode.cpp ../Maze/rectnode.h \
@@ -1645,7 +1880,231 @@ release/widget.o: ../Maze/widget.cpp ../Maze/widget.h \
 		C:/Qt/Qt5.12.10/5.12.10/mingw73_32/include/QtWidgets/qmessagebox.h \
 		C:/Qt/Qt5.12.10/5.12.10/mingw73_32/include/QtWidgets/qdialog.h \
 		../Maze/maze_page.h \
-		C:/Qt/Qt5.12.10/5.12.10/mingw73_32/include/QtWidgets/QDialog
+		C:/Qt/Qt5.12.10/5.12.10/mingw73_32/include/QtWidgets/QDialog \
+		../Maze/maze.h \
+		../Maze/rectnode.h \
+		C:/Qt/Qt5.12.10/5.12.10/mingw73_32/include/QtWidgets/QGraphicsRectItem \
+		C:/Qt/Qt5.12.10/5.12.10/mingw73_32/include/QtWidgets/qgraphicsitem.h \
+		C:/Qt/Qt5.12.10/5.12.10/mingw73_32/include/QtGui/QtGui \
+		C:/Qt/Qt5.12.10/5.12.10/mingw73_32/include/QtGui/QtGuiDepends \
+		C:/Qt/Qt5.12.10/5.12.10/mingw73_32/include/QtCore/QtCore \
+		C:/Qt/Qt5.12.10/5.12.10/mingw73_32/include/QtCore/QtCoreDepends \
+		C:/Qt/Qt5.12.10/5.12.10/mingw73_32/include/QtCore/qabstractanimation.h \
+		C:/Qt/Qt5.12.10/5.12.10/mingw73_32/include/QtCore/qabstracteventdispatcher.h \
+		C:/Qt/Qt5.12.10/5.12.10/mingw73_32/include/QtCore/qabstractitemmodel.h \
+		C:/Qt/Qt5.12.10/5.12.10/mingw73_32/include/QtCore/qabstractnativeeventfilter.h \
+		C:/Qt/Qt5.12.10/5.12.10/mingw73_32/include/QtCore/qabstractproxymodel.h \
+		C:/Qt/Qt5.12.10/5.12.10/mingw73_32/include/QtCore/qabstractstate.h \
+		C:/Qt/Qt5.12.10/5.12.10/mingw73_32/include/QtCore/qabstracttransition.h \
+		C:/Qt/Qt5.12.10/5.12.10/mingw73_32/include/QtCore/qanimationgroup.h \
+		C:/Qt/Qt5.12.10/5.12.10/mingw73_32/include/QtCore/qarraydataops.h \
+		C:/Qt/Qt5.12.10/5.12.10/mingw73_32/include/QtCore/qarraydatapointer.h \
+		C:/Qt/Qt5.12.10/5.12.10/mingw73_32/include/QtCore/qbasictimer.h \
+		C:/Qt/Qt5.12.10/5.12.10/mingw73_32/include/QtCore/qbitarray.h \
+		C:/Qt/Qt5.12.10/5.12.10/mingw73_32/include/QtCore/qbuffer.h \
+		C:/Qt/Qt5.12.10/5.12.10/mingw73_32/include/QtCore/qbytearraymatcher.h \
+		C:/Qt/Qt5.12.10/5.12.10/mingw73_32/include/QtCore/qcache.h \
+		C:/Qt/Qt5.12.10/5.12.10/mingw73_32/include/QtCore/qcborarray.h \
+		C:/Qt/Qt5.12.10/5.12.10/mingw73_32/include/QtCore/qcborvalue.h \
+		C:/Qt/Qt5.12.10/5.12.10/mingw73_32/include/QtCore/qdatetime.h \
+		C:/Qt/Qt5.12.10/5.12.10/mingw73_32/include/QtCore/qcborcommon.h \
+		C:/Qt/Qt5.12.10/5.12.10/mingw73_32/include/QtCore/qregularexpression.h \
+		C:/Qt/Qt5.12.10/5.12.10/mingw73_32/include/QtCore/quuid.h \
+		C:/Qt/Qt5.12.10/5.12.10/mingw73_32/include/QtCore/qcbormap.h \
+		C:/Qt/Qt5.12.10/5.12.10/mingw73_32/include/QtCore/qcborstream.h \
+		C:/Qt/Qt5.12.10/5.12.10/mingw73_32/include/QtCore/qfloat16.h \
+		C:/Qt/Qt5.12.10/5.12.10/mingw73_32/include/QtCore/qcollator.h \
+		C:/Qt/Qt5.12.10/5.12.10/mingw73_32/include/QtCore/qcommandlineoption.h \
+		C:/Qt/Qt5.12.10/5.12.10/mingw73_32/include/QtCore/qcommandlineparser.h \
+		C:/Qt/Qt5.12.10/5.12.10/mingw73_32/include/QtCore/qcryptographichash.h \
+		C:/Qt/Qt5.12.10/5.12.10/mingw73_32/include/QtCore/qdeadlinetimer.h \
+		C:/Qt/Qt5.12.10/5.12.10/mingw73_32/include/QtCore/qelapsedtimer.h \
+		C:/Qt/Qt5.12.10/5.12.10/mingw73_32/include/QtCore/qdir.h \
+		C:/Qt/Qt5.12.10/5.12.10/mingw73_32/include/QtCore/qfileinfo.h \
+		C:/Qt/Qt5.12.10/5.12.10/mingw73_32/include/QtCore/qdiriterator.h \
+		C:/Qt/Qt5.12.10/5.12.10/mingw73_32/include/QtCore/qeasingcurve.h \
+		C:/Qt/Qt5.12.10/5.12.10/mingw73_32/include/QtCore/qendian.h \
+		C:/Qt/Qt5.12.10/5.12.10/mingw73_32/include/QtCore/qeventtransition.h \
+		C:/Qt/Qt5.12.10/5.12.10/mingw73_32/include/QtCore/qexception.h \
+		C:/Qt/Qt5.12.10/5.12.10/mingw73_32/include/QtCore/qfactoryinterface.h \
+		C:/Qt/Qt5.12.10/5.12.10/mingw73_32/include/QtCore/qfileselector.h \
+		C:/Qt/Qt5.12.10/5.12.10/mingw73_32/include/QtCore/QObject \
+		C:/Qt/Qt5.12.10/5.12.10/mingw73_32/include/QtCore/QStringList \
+		C:/Qt/Qt5.12.10/5.12.10/mingw73_32/include/QtCore/qfilesystemwatcher.h \
+		C:/Qt/Qt5.12.10/5.12.10/mingw73_32/include/QtCore/qfinalstate.h \
+		C:/Qt/Qt5.12.10/5.12.10/mingw73_32/include/QtCore/qfuture.h \
+		C:/Qt/Qt5.12.10/5.12.10/mingw73_32/include/QtCore/qfutureinterface.h \
+		C:/Qt/Qt5.12.10/5.12.10/mingw73_32/include/QtCore/qrunnable.h \
+		C:/Qt/Qt5.12.10/5.12.10/mingw73_32/include/QtCore/qresultstore.h \
+		C:/Qt/Qt5.12.10/5.12.10/mingw73_32/include/QtCore/qfuturesynchronizer.h \
+		C:/Qt/Qt5.12.10/5.12.10/mingw73_32/include/QtCore/qfuturewatcher.h \
+		C:/Qt/Qt5.12.10/5.12.10/mingw73_32/include/QtCore/qhistorystate.h \
+		C:/Qt/Qt5.12.10/5.12.10/mingw73_32/include/QtCore/qidentityproxymodel.h \
+		C:/Qt/Qt5.12.10/5.12.10/mingw73_32/include/QtCore/qisenum.h \
+		C:/Qt/Qt5.12.10/5.12.10/mingw73_32/include/QtCore/qitemselectionmodel.h \
+		C:/Qt/Qt5.12.10/5.12.10/mingw73_32/include/QtCore/qjsonarray.h \
+		C:/Qt/Qt5.12.10/5.12.10/mingw73_32/include/QtCore/qjsonvalue.h \
+		C:/Qt/Qt5.12.10/5.12.10/mingw73_32/include/QtCore/qjsondocument.h \
+		C:/Qt/Qt5.12.10/5.12.10/mingw73_32/include/QtCore/qjsonobject.h \
+		C:/Qt/Qt5.12.10/5.12.10/mingw73_32/include/QtCore/qlibrary.h \
+		C:/Qt/Qt5.12.10/5.12.10/mingw73_32/include/QtCore/qlibraryinfo.h \
+		C:/Qt/Qt5.12.10/5.12.10/mingw73_32/include/QtCore/qversionnumber.h \
+		C:/Qt/Qt5.12.10/5.12.10/mingw73_32/include/QtCore/qlinkedlist.h \
+		C:/Qt/Qt5.12.10/5.12.10/mingw73_32/include/QtCore/qlockfile.h \
+		C:/Qt/Qt5.12.10/5.12.10/mingw73_32/include/QtCore/qloggingcategory.h \
+		C:/Qt/Qt5.12.10/5.12.10/mingw73_32/include/QtCore/qmath.h \
+		C:/Qt/Qt5.12.10/5.12.10/mingw73_32/include/QtCore/qmessageauthenticationcode.h \
+		C:/Qt/Qt5.12.10/5.12.10/mingw73_32/include/QtCore/qmetaobject.h \
+		C:/Qt/Qt5.12.10/5.12.10/mingw73_32/include/QtCore/qmimedata.h \
+		C:/Qt/Qt5.12.10/5.12.10/mingw73_32/include/QtCore/qmimedatabase.h \
+		C:/Qt/Qt5.12.10/5.12.10/mingw73_32/include/QtCore/qmimetype.h \
+		C:/Qt/Qt5.12.10/5.12.10/mingw73_32/include/QtCore/qobjectcleanuphandler.h \
+		C:/Qt/Qt5.12.10/5.12.10/mingw73_32/include/QtCore/qoperatingsystemversion.h \
+		C:/Qt/Qt5.12.10/5.12.10/mingw73_32/include/QtCore/qparallelanimationgroup.h \
+		C:/Qt/Qt5.12.10/5.12.10/mingw73_32/include/QtCore/qpauseanimation.h \
+		C:/Qt/Qt5.12.10/5.12.10/mingw73_32/include/QtCore/qplugin.h \
+		C:/Qt/Qt5.12.10/5.12.10/mingw73_32/include/QtCore/qpointer.h \
+		C:/Qt/Qt5.12.10/5.12.10/mingw73_32/include/QtCore/qpluginloader.h \
+		C:/Qt/Qt5.12.10/5.12.10/mingw73_32/include/QtCore/qprocess.h \
+		C:/Qt/Qt5.12.10/5.12.10/mingw73_32/include/QtCore/qpropertyanimation.h \
+		C:/Qt/Qt5.12.10/5.12.10/mingw73_32/include/QtCore/qvariantanimation.h \
+		C:/Qt/Qt5.12.10/5.12.10/mingw73_32/include/QtCore/qqueue.h \
+		C:/Qt/Qt5.12.10/5.12.10/mingw73_32/include/QtCore/qrandom.h \
+		C:/Qt/Qt5.12.10/5.12.10/mingw73_32/include/QtCore/qreadwritelock.h \
+		C:/Qt/Qt5.12.10/5.12.10/mingw73_32/include/QtCore/qresource.h \
+		C:/Qt/Qt5.12.10/5.12.10/mingw73_32/include/QtCore/qsavefile.h \
+		C:/Qt/Qt5.12.10/5.12.10/mingw73_32/include/QtCore/qscopedvaluerollback.h \
+		C:/Qt/Qt5.12.10/5.12.10/mingw73_32/include/QtCore/qscopeguard.h \
+		C:/Qt/Qt5.12.10/5.12.10/mingw73_32/include/QtCore/qsemaphore.h \
+		C:/Qt/Qt5.12.10/5.12.10/mingw73_32/include/QtCore/qsequentialanimationgroup.h \
+		C:/Qt/Qt5.12.10/5.12.10/mingw73_32/include/QtCore/qsettings.h \
+		C:/Qt/Qt5.12.10/5.12.10/mingw73_32/include/QtCore/qsharedmemory.h \
+		C:/Qt/Qt5.12.10/5.12.10/mingw73_32/include/QtCore/qsignalmapper.h \
+		C:/Qt/Qt5.12.10/5.12.10/mingw73_32/include/QtCore/qsignaltransition.h \
+		C:/Qt/Qt5.12.10/5.12.10/mingw73_32/include/QtCore/qsocketnotifier.h \
+		C:/Qt/Qt5.12.10/5.12.10/mingw73_32/include/QtCore/qsortfilterproxymodel.h \
+		C:/Qt/Qt5.12.10/5.12.10/mingw73_32/include/QtCore/qstack.h \
+		C:/Qt/Qt5.12.10/5.12.10/mingw73_32/include/QtCore/qstandardpaths.h \
+		C:/Qt/Qt5.12.10/5.12.10/mingw73_32/include/QtCore/qstate.h \
+		C:/Qt/Qt5.12.10/5.12.10/mingw73_32/include/QtCore/qstatemachine.h \
+		C:/Qt/Qt5.12.10/5.12.10/mingw73_32/include/QtCore/qstorageinfo.h \
+		C:/Qt/Qt5.12.10/5.12.10/mingw73_32/include/QtCore/qstringlistmodel.h \
+		C:/Qt/Qt5.12.10/5.12.10/mingw73_32/include/QtCore/qsystemsemaphore.h \
+		C:/Qt/Qt5.12.10/5.12.10/mingw73_32/include/QtCore/qtemporarydir.h \
+		C:/Qt/Qt5.12.10/5.12.10/mingw73_32/include/QtCore/qtemporaryfile.h \
+		C:/Qt/Qt5.12.10/5.12.10/mingw73_32/include/QtCore/qtextboundaryfinder.h \
+		C:/Qt/Qt5.12.10/5.12.10/mingw73_32/include/QtCore/qtextcodec.h \
+		C:/Qt/Qt5.12.10/5.12.10/mingw73_32/include/QtCore/qthread.h \
+		C:/Qt/Qt5.12.10/5.12.10/mingw73_32/include/QtCore/qthreadpool.h \
+		C:/Qt/Qt5.12.10/5.12.10/mingw73_32/include/QtCore/qthreadstorage.h \
+		C:/Qt/Qt5.12.10/5.12.10/mingw73_32/include/QtCore/qtimeline.h \
+		C:/Qt/Qt5.12.10/5.12.10/mingw73_32/include/QtCore/qtimer.h \
+		C:/Qt/Qt5.12.10/5.12.10/mingw73_32/include/QtCore/qtimezone.h \
+		C:/Qt/Qt5.12.10/5.12.10/mingw73_32/include/QtCore/qtranslator.h \
+		C:/Qt/Qt5.12.10/5.12.10/mingw73_32/include/QtCore/qtypetraits.h \
+		C:/Qt/Qt5.12.10/5.12.10/mingw73_32/include/QtCore/qwaitcondition.h \
+		C:/Qt/Qt5.12.10/5.12.10/mingw73_32/include/QtCore/qwineventnotifier.h \
+		C:/Qt/Qt5.12.10/5.12.10/mingw73_32/include/QtCore/qxmlstream.h \
+		C:/Qt/Qt5.12.10/5.12.10/mingw73_32/include/QtCore/qtcoreversion.h \
+		C:/Qt/Qt5.12.10/5.12.10/mingw73_32/include/QtGui/qabstracttextdocumentlayout.h \
+		C:/Qt/Qt5.12.10/5.12.10/mingw73_32/include/QtGui/qtextlayout.h \
+		C:/Qt/Qt5.12.10/5.12.10/mingw73_32/include/QtGui/qglyphrun.h \
+		C:/Qt/Qt5.12.10/5.12.10/mingw73_32/include/QtGui/qrawfont.h \
+		C:/Qt/Qt5.12.10/5.12.10/mingw73_32/include/QtGui/qfontdatabase.h \
+		C:/Qt/Qt5.12.10/5.12.10/mingw73_32/include/QtGui/qtextdocument.h \
+		C:/Qt/Qt5.12.10/5.12.10/mingw73_32/include/QtGui/qaccessible.h \
+		C:/Qt/Qt5.12.10/5.12.10/mingw73_32/include/QtGui/qaccessiblebridge.h \
+		C:/Qt/Qt5.12.10/5.12.10/mingw73_32/include/QtGui/qaccessibleobject.h \
+		C:/Qt/Qt5.12.10/5.12.10/mingw73_32/include/QtGui/qaccessibleplugin.h \
+		C:/Qt/Qt5.12.10/5.12.10/mingw73_32/include/QtGui/qbackingstore.h \
+		C:/Qt/Qt5.12.10/5.12.10/mingw73_32/include/QtGui/qwindow.h \
+		C:/Qt/Qt5.12.10/5.12.10/mingw73_32/include/QtCore/QEvent \
+		C:/Qt/Qt5.12.10/5.12.10/mingw73_32/include/QtCore/QMargins \
+		C:/Qt/Qt5.12.10/5.12.10/mingw73_32/include/QtCore/QRect \
+		C:/Qt/Qt5.12.10/5.12.10/mingw73_32/include/QtGui/qsurface.h \
+		C:/Qt/Qt5.12.10/5.12.10/mingw73_32/include/QtGui/qsurfaceformat.h \
+		C:/Qt/Qt5.12.10/5.12.10/mingw73_32/include/QtGui/qbitmap.h \
+		C:/Qt/Qt5.12.10/5.12.10/mingw73_32/include/QtGui/qclipboard.h \
+		C:/Qt/Qt5.12.10/5.12.10/mingw73_32/include/QtGui/qdesktopservices.h \
+		C:/Qt/Qt5.12.10/5.12.10/mingw73_32/include/QtGui/qdrag.h \
+		C:/Qt/Qt5.12.10/5.12.10/mingw73_32/include/QtGui/qgenericmatrix.h \
+		C:/Qt/Qt5.12.10/5.12.10/mingw73_32/include/QtGui/qgenericplugin.h \
+		C:/Qt/Qt5.12.10/5.12.10/mingw73_32/include/QtGui/qgenericpluginfactory.h \
+		C:/Qt/Qt5.12.10/5.12.10/mingw73_32/include/QtGui/qiconengine.h \
+		C:/Qt/Qt5.12.10/5.12.10/mingw73_32/include/QtGui/qiconengineplugin.h \
+		C:/Qt/Qt5.12.10/5.12.10/mingw73_32/include/QtGui/qimageiohandler.h \
+		C:/Qt/Qt5.12.10/5.12.10/mingw73_32/include/QtGui/qimagereader.h \
+		C:/Qt/Qt5.12.10/5.12.10/mingw73_32/include/QtGui/qimagewriter.h \
+		C:/Qt/Qt5.12.10/5.12.10/mingw73_32/include/QtGui/qmatrix4x4.h \
+		C:/Qt/Qt5.12.10/5.12.10/mingw73_32/include/QtGui/qvector3d.h \
+		C:/Qt/Qt5.12.10/5.12.10/mingw73_32/include/QtGui/qvector4d.h \
+		C:/Qt/Qt5.12.10/5.12.10/mingw73_32/include/QtGui/qquaternion.h \
+		C:/Qt/Qt5.12.10/5.12.10/mingw73_32/include/QtGui/qmovie.h \
+		C:/Qt/Qt5.12.10/5.12.10/mingw73_32/include/QtGui/qoffscreensurface.h \
+		C:/Qt/Qt5.12.10/5.12.10/mingw73_32/include/QtGui/qopengl.h \
+		C:/Qt/Qt5.12.10/5.12.10/mingw73_32/include/QtCore/qt_windows.h \
+		C:/Qt/Qt5.12.10/5.12.10/mingw73_32/include/QtANGLE/GLES3/gl3.h \
+		C:/Qt/Qt5.12.10/5.12.10/mingw73_32/include/QtANGLE/GLES3/gl3platform.h \
+		C:/Qt/Qt5.12.10/5.12.10/mingw73_32/include/QtANGLE/KHR/khrplatform.h \
+		C:/Qt/Qt5.12.10/5.12.10/mingw73_32/include/QtANGLE/GLES2/gl2.h \
+		C:/Qt/Qt5.12.10/5.12.10/mingw73_32/include/QtANGLE/GLES2/gl2platform.h \
+		C:/Qt/Qt5.12.10/5.12.10/mingw73_32/include/QtGui/qopengles2ext.h \
+		C:/Qt/Qt5.12.10/5.12.10/mingw73_32/include/QtGui/qopenglext.h \
+		C:/Qt/Qt5.12.10/5.12.10/mingw73_32/include/QtGui/qopenglbuffer.h \
+		C:/Qt/Qt5.12.10/5.12.10/mingw73_32/include/QtGui/qopenglcontext.h \
+		C:/Qt/Qt5.12.10/5.12.10/mingw73_32/include/QtCore/QScopedPointer \
+		C:/Qt/Qt5.12.10/5.12.10/mingw73_32/include/QtGui/QSurfaceFormat \
+		C:/Qt/Qt5.12.10/5.12.10/mingw73_32/include/QtGui/qopenglversionfunctions.h \
+		C:/Qt/Qt5.12.10/5.12.10/mingw73_32/include/QtGui/qopengldebug.h \
+		C:/Qt/Qt5.12.10/5.12.10/mingw73_32/include/QtGui/qopenglextrafunctions.h \
+		C:/Qt/Qt5.12.10/5.12.10/mingw73_32/include/QtGui/qopenglfunctions.h \
+		C:/Qt/Qt5.12.10/5.12.10/mingw73_32/include/QtGui/qopenglframebufferobject.h \
+		C:/Qt/Qt5.12.10/5.12.10/mingw73_32/include/QtGui/qopenglpaintdevice.h \
+		C:/Qt/Qt5.12.10/5.12.10/mingw73_32/include/QtGui/qopenglpixeltransferoptions.h \
+		C:/Qt/Qt5.12.10/5.12.10/mingw73_32/include/QtCore/QSharedDataPointer \
+		C:/Qt/Qt5.12.10/5.12.10/mingw73_32/include/QtGui/qopenglshaderprogram.h \
+		C:/Qt/Qt5.12.10/5.12.10/mingw73_32/include/QtGui/qopengltexture.h \
+		C:/Qt/Qt5.12.10/5.12.10/mingw73_32/include/QtGui/qopengltextureblitter.h \
+		C:/Qt/Qt5.12.10/5.12.10/mingw73_32/include/QtGui/QMatrix3x3 \
+		C:/Qt/Qt5.12.10/5.12.10/mingw73_32/include/QtGui/QMatrix4x4 \
+		C:/Qt/Qt5.12.10/5.12.10/mingw73_32/include/QtGui/qopengltimerquery.h \
+		C:/Qt/Qt5.12.10/5.12.10/mingw73_32/include/QtGui/qopenglvertexarrayobject.h \
+		C:/Qt/Qt5.12.10/5.12.10/mingw73_32/include/QtGui/qopenglwindow.h \
+		C:/Qt/Qt5.12.10/5.12.10/mingw73_32/include/QtGui/QPaintDeviceWindow \
+		C:/Qt/Qt5.12.10/5.12.10/mingw73_32/include/QtGui/qpaintdevicewindow.h \
+		C:/Qt/Qt5.12.10/5.12.10/mingw73_32/include/QtGui/QWindow \
+		C:/Qt/Qt5.12.10/5.12.10/mingw73_32/include/QtGui/QPaintDevice \
+		C:/Qt/Qt5.12.10/5.12.10/mingw73_32/include/QtGui/QOpenGLContext \
+		C:/Qt/Qt5.12.10/5.12.10/mingw73_32/include/QtGui/QImage \
+		C:/Qt/Qt5.12.10/5.12.10/mingw73_32/include/QtGui/qpagedpaintdevice.h \
+		C:/Qt/Qt5.12.10/5.12.10/mingw73_32/include/QtGui/qpagelayout.h \
+		C:/Qt/Qt5.12.10/5.12.10/mingw73_32/include/QtGui/qpagesize.h \
+		C:/Qt/Qt5.12.10/5.12.10/mingw73_32/include/QtGui/qpaintengine.h \
+		C:/Qt/Qt5.12.10/5.12.10/mingw73_32/include/QtGui/qpainter.h \
+		C:/Qt/Qt5.12.10/5.12.10/mingw73_32/include/QtGui/qpdfwriter.h \
+		C:/Qt/Qt5.12.10/5.12.10/mingw73_32/include/QtGui/qpicture.h \
+		C:/Qt/Qt5.12.10/5.12.10/mingw73_32/include/QtGui/qpictureformatplugin.h \
+		C:/Qt/Qt5.12.10/5.12.10/mingw73_32/include/QtGui/qpixmapcache.h \
+		C:/Qt/Qt5.12.10/5.12.10/mingw73_32/include/QtGui/qrasterwindow.h \
+		C:/Qt/Qt5.12.10/5.12.10/mingw73_32/include/QtGui/qscreen.h \
+		C:/Qt/Qt5.12.10/5.12.10/mingw73_32/include/QtCore/QList \
+		C:/Qt/Qt5.12.10/5.12.10/mingw73_32/include/QtCore/QSize \
+		C:/Qt/Qt5.12.10/5.12.10/mingw73_32/include/QtCore/QSizeF \
+		C:/Qt/Qt5.12.10/5.12.10/mingw73_32/include/QtGui/QTransform \
+		C:/Qt/Qt5.12.10/5.12.10/mingw73_32/include/QtGui/qsessionmanager.h \
+		C:/Qt/Qt5.12.10/5.12.10/mingw73_32/include/QtGui/qstandarditemmodel.h \
+		C:/Qt/Qt5.12.10/5.12.10/mingw73_32/include/QtGui/qstatictext.h \
+		C:/Qt/Qt5.12.10/5.12.10/mingw73_32/include/QtGui/qstylehints.h \
+		C:/Qt/Qt5.12.10/5.12.10/mingw73_32/include/QtGui/qsyntaxhighlighter.h \
+		C:/Qt/Qt5.12.10/5.12.10/mingw73_32/include/QtGui/qtextobject.h \
+		C:/Qt/Qt5.12.10/5.12.10/mingw73_32/include/QtGui/qtextdocumentfragment.h \
+		C:/Qt/Qt5.12.10/5.12.10/mingw73_32/include/QtGui/qtextdocumentwriter.h \
+		C:/Qt/Qt5.12.10/5.12.10/mingw73_32/include/QtGui/qtextlist.h \
+		C:/Qt/Qt5.12.10/5.12.10/mingw73_32/include/QtGui/qtexttable.h \
+		C:/Qt/Qt5.12.10/5.12.10/mingw73_32/include/QtGui/qvalidator.h \
+		C:/Qt/Qt5.12.10/5.12.10/mingw73_32/include/QtGui/qtguiversion.h \
+		C:/Qt/Qt5.12.10/5.12.10/mingw73_32/include/QtWidgets/QGraphicsScene \
+		C:/Qt/Qt5.12.10/5.12.10/mingw73_32/include/QtWidgets/qgraphicsscene.h
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o release\widget.o ..\Maze\widget.cpp
 
 release/moc_maze_page.o: release/moc_maze_page.cpp 
