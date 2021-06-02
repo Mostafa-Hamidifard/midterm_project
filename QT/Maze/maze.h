@@ -5,8 +5,8 @@
 #include<QGraphicsScene>
 #include<QGraphicsView>
 #include <stdlib.h>     /* srand, rand */
-#include <time.h>
 #include<deque>
+#include<QDebug>
 class Maze
 {
 public:
@@ -20,9 +20,9 @@ public:
     enum direction{left=0,right=1,up=2,down=3};
     void change_head(direction d);
     void solveBFS();
-    RectNode* Breadth_first_search(std::vector<RectNode*> parents);
     void solveDFS();
     bool Depth_first_search(RectNode* head);
+    std::deque<RectNode *> get_children(RectNode *);
 private:
     QGraphicsView* gview;
     QGraphicsScene* scene;

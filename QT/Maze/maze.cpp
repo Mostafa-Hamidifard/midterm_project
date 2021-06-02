@@ -1,7 +1,5 @@
 #include "maze.h"
-#include<QDebug>
-#include<iostream>
-#include<QThread>
+
 Maze::Maze(QGraphicsView* _g,QGraphicsScene* _s,int _m,int _n):m{_m},n{_n}
 {
     scene = _s;
@@ -76,81 +74,54 @@ void Maze::change_head(Maze::direction d)
 
 }
 
+std::deque<RectNode*> Maze::get_children(RectNode* node){
+    std::vector<RectNode*> temp_neigh{node->real_neighbours()};
+    std::deque<RectNode*> result{};
+    for(auto it{temp_neigh.begin()};it != temp_neigh.end();it++){
+        if((*it)==node->parent)
+            continue;
+        else
+            result.push_back((*it));
+    }
+    return result;
+}
 void Maze::solveBFS()
 {
     path.clear();
-    if(m==1&&n==1){
+    if(m==1&&n==1)
         return;
-    }else{
-        qDebug()<<"BFS begins:";
-        path.push_back(matrix[0][0]);
-        for(auto val :matrix[0][0]->real_neighbours()){
-            val->parent = matrix[0][0];
-            if(val == matrix[m-1][n-1]){
-                path.push_back(val);
-                val->set_passed(true);
-                return;
-            }
-        }
-        Maze::Breadth_first_search(matrix[0][0]->real_neighbours());
-    }
-    for(auto item:path){
-        item->set_passed(true);
-    }
-}
-RectNode* Maze::Breadth_first_search(std::vector<RectNode*> parentList) // it needs to change//1,2 should work!
-{
-    qDebug()<<"breadth_first_search CALLED";
-    for(auto parent :parentList){
-        qDebug()<<"parent: x,y="<<parent->x<<", "<<parent->y;
-        for(auto child:parent->real_neighbours()){
-            qDebug()<<"\tchild: x,y="<<child->x<<", "<<child->y;
-        }
-    }
-    if(parentList.empty()){
-        qDebug()<<"parentList was empty";
-        return nullptr;
-    }
-    for(auto parent: parentList){
-        qDebug()<<"first loop with parent: x="<<parent->x<<" y="<<parent->y;
-        for(auto child : parent->real_neighbours()){
-            if(child == parent->parent){
-                continue;
-            }
-            qDebug()<<"child: x: "<<child->x<<" y: "<<child->y;
-            child->parent = parent;
+    bool target_found{false};
+    std::deque<RectNode*>   children{ get_children(matrix[0][0])};
+    for(RectNode* child:children)
+        child->parent = matrix[0][0];
+    while(target_found == 0){
+        for(RectNode* child: children){
+            qDebug()<<"checking child x="<<child->x<<" y="<<child->y;
             if(child == matrix[m-1][n-1]){
-                path.push_back(child->parent); ///!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-                path.push_back(child);
-                return child->parent;
+                target_found=true;
+                break;
             }
         }
-    }
-    qDebug()<<"first for ended";
-    std::vector<RectNode*> temp_par{};
-    for(auto parent: parentList){
-        for(auto child:parent->real_neighbours()){
-            if(child == parent->parent)
-                continue;
-            std::vector<RectNode*> real_neghs{child->real_neighbours()};
-            for(auto iter{real_neghs.begin()};iter<real_neghs.end();iter++){
-                if(*(iter) == parent){
-                    real_neghs.erase(iter);
-                    qDebug()<<"parent erased x,y:"<<parent->x<<" "<<parent->y;
-                }
+        std::deque<RectNode*>  temp_children{};
+        for(RectNode* item:children){
+            std::deque<RectNode*> temp2{get_children(item)};
+            for(RectNode* item2:temp2){
+                item2->parent=item;
+                temp_children.push_back(item2);
             }
-            temp_par.insert(temp_par.end(),real_neghs.begin(),real_neghs.end());
         }
+        children.swap(temp_children);
     }
-    RectNode* result{Breadth_first_search(temp_par)};
-    if(result==nullptr){
-        qDebug()<<"didnt found anything!";
-        return nullptr; // didnt found anything(impossible)
+    path.push_back(matrix[m-1][n-1]);
+    RectNode* parent_node = matrix[m-1][n-1]->parent;
+    while(parent_node->parent!= nullptr){
+        path.push_back(parent_node);
+        parent_node=parent_node->parent;
     }
-    path.push_back(result->parent);
-    return result->parent;
-}
+    for(auto item:path)
+        item->set_passed(true);
 
+}
 void Maze::create_maze()
 {
     srand (time(NULL));
@@ -161,6 +132,10 @@ void Maze::create_maze()
     while (is_any_rect_notpassed()) {
         while(negh_avai.empty()){
             path.pop_back();
+            //            if(path.empty()==0){
+            //                path.push_back(matrix[0][0]);
+            //            }
+
             negh_avai = neighbour_available(path.back());
         }
         ///////where you should change your Maze creation method////////////////////////////////////////////////////////
