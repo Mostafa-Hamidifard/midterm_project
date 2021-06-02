@@ -36,7 +36,6 @@ public:
     QHBoxLayout *horizontalLayout_2;
     QVBoxLayout *new_reset_lay;
     QPushButton *btn_dfs;
-    QPushButton *btn_bid;
     QPushButton *btn_bfs;
     QVBoxLayout *new_reset_lay_3;
     QPushButton *pushButton_5;
@@ -114,13 +113,6 @@ public:
 
         new_reset_lay->addWidget(btn_dfs);
 
-        btn_bid = new QPushButton(maze_page);
-        btn_bid->setObjectName(QString::fromUtf8("btn_bid"));
-        btn_bid->setMinimumSize(QSize(200, 50));
-        btn_bid->setMaximumSize(QSize(200, 50));
-
-        new_reset_lay->addWidget(btn_bid);
-
         btn_bfs = new QPushButton(maze_page);
         btn_bfs->setObjectName(QString::fromUtf8("btn_bfs"));
         btn_bfs->setMinimumSize(QSize(100, 50));
@@ -166,7 +158,6 @@ public:
         pad_down->setText(QApplication::translate("maze_page", "DOWN", nullptr));
         pad_right->setText(QApplication::translate("maze_page", "RIGHT", nullptr));
         btn_dfs->setText(QApplication::translate("maze_page", "solve with DFS", nullptr));
-        btn_bid->setText(QApplication::translate("maze_page", "solve with Bidirectional", nullptr));
         btn_bfs->setText(QApplication::translate("maze_page", "solve with BFS", nullptr));
         pushButton_5->setText(QApplication::translate("maze_page", "RESET PATH", nullptr));
     } // retranslateUi

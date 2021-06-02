@@ -137,25 +137,6 @@
           </widget>
          </item>
          <item>
-          <widget class="QPushButton" name="btn_bid">
-           <property name="minimumSize">
-            <size>
-             <width>200</width>
-             <height>50</height>
-            </size>
-           </property>
-           <property name="maximumSize">
-            <size>
-             <width>200</width>
-             <height>50</height>
-            </size>
-           </property>
-           <property name="text">
-            <string>solve with Bidirectional</string>
-           </property>
-          </widget>
-         </item>
-         <item>
           <widget class="QPushButton" name="btn_bfs">
            <property name="minimumSize">
             <size>
