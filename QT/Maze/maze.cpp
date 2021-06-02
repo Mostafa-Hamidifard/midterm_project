@@ -109,7 +109,7 @@ RectNode* Maze::Breadth_first_search(std::vector<RectNode*> parentList) // it ne
     for(auto parent :parentList){
         qDebug()<<"parent: x,y="<<parent->x<<", "<<parent->y;
         for(auto child:parent->real_neighbours()){
-            qDebug()<<"     child: x,y="<<child->x<<", "<<child->y;
+            qDebug()<<"\tchild: x,y="<<child->x<<", "<<child->y;
         }
     }
     if(parentList.empty()){
