@@ -1,51 +1,43 @@
 #include "maze.h"
-#include<stack>
 #include<QDebug>
 #include<iostream>
-#include <QThread>
 #include<windows.h>
 Maze::Maze(int _m,int _n):m{_m},n{_n}
 {
     for(int i{0};i<m;i++){
-        std::vector<RectNode*> *nodes = new std::vector<RectNode*>();
+        std::vector<RectNode*> nodes{};
         for(int j{0};j<n;j++){
             RectNode* nod = new RectNode(i,j,false);
             std::map<int,RectNode*>* negh{&nod->neighbours};
-            if(i == 0)
-                negh->erase(negh->find(RectNode::others::left));
-            if(i == m-1)
-                negh->erase(negh->find(RectNode::others::right));
-            if(j == 0)
-                negh->erase(negh->find(RectNode::others::up));
-            if(j == n-1)
-                negh->erase(negh->find(RectNode::others::down));
-            nodes->push_back(nod);
-            RectNode::update_rect_nei_colors(nodes->operator[](j)); // to make borders at first
+            if(i == 0){
+                negh->erase(negh->find(RectNode::direction::left));
+            }if(i == m-1){
+                negh->erase(negh->find(RectNode::direction::right));
+            }if(j == 0){
+                negh->erase(negh->find(RectNode::direction::up));
+            }if(j == n-1){
+                negh->erase(negh->find(RectNode::direction::down));
+            }
+            nodes.push_back(nod);
+            nodes[j]->update_rect_nei_colors(m,n); // to make borders at first
         }
-        matrix.push_back(*nodes);
+        matrix.push_back(nodes);
     }
-    // change [0][0] as enterance
-    matrix[0][0]->left_rec->setPen(Qt::NoPen);
-    matrix[0][0]->left_rec->setBrush(Qt::red);
-    matrix[0][0]->center_rec->setPen(Qt::NoPen);
-    // change [m-1][n-1] as exit
-    matrix[m-1][n-1]->right_rec->setPen(Qt::NoPen);
-    matrix[m-1][n-1]->right_rec->setBrush(Qt::red);
-    matrix[m-1][n-1]->center_rec->setPen(Qt::NoPen);
     // algorithm to create a maze:
     create_maze();
-    // [0][0] will be in path:
+    matrix[0][0]->rect_container[RectNode::left_rec]->setBrush(Qt::red);
+    matrix[m-1][n-1]->rect_container[RectNode::right_rec]->setBrush(Qt::red);
     path.push_back(matrix[0][0]);
     matrix[0][0]->set_passed(true);
-    std::cout<<"end of maze constructor\n";
 }
 Maze::~Maze(){
+    qDebug()<<"destruction started";
     for(int i{0};i<m;i++){
         for(int j{0};j<n;j++){
             delete matrix[i][j];
         }
-        delete &matrix[i];
     }
+    qDebug()<<"destruction ended";
 }
 void Maze::add_maze(QGraphicsScene* scene){
     for(int i{0};i<m;i++)
@@ -64,7 +56,8 @@ void Maze::clear_path()
 }
 
 void Maze::change_head(Maze::direction d)
-{   RectNode* ohead = path.back();
+{
+    RectNode* ohead = path.back();
     //  std::cout<<"in change head\n";
     auto negh{ohead->neighbours.find(d)};
     if(negh == ohead->neighbours.end() || negh->second==nullptr)
@@ -125,7 +118,7 @@ RectNode* Maze::Breadth_first_search(std::vector<RectNode*> parentList) // it ne
             qDebug()<<"child: x: "<<child->x<<" y: "<<child->y;
             child->parent = parent;
             if(child == matrix[m-1][n-1]){
-                path.push_back(child->parent);
+                path.push_back(child->parent); ///!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
                 path.push_back(child);
                 return child->parent;
             }
@@ -159,35 +152,31 @@ RectNode* Maze::Breadth_first_search(std::vector<RectNode*> parentList) // it ne
 void Maze::create_maze()
 {
     srand (time(NULL));
-    // std::stack<RectNode*> stack{}; // used for tracking
     matrix[0][0]->set_passed(true);
-    //  stack.push(matrix[0][0]); // first one is [0][0]
     path.push_back(matrix[0][0]);
     std::vector<int> negh_avai{neighbour_available(path.back())};
     int nn{};
     while (is_any_rect_notpassed()) {
-        while(negh_avai.empty()){             //////////////////////need to get changed
-
-            //    stack.pop();
+        while(negh_avai.empty()){
             path.pop_back();
             negh_avai = neighbour_available(path.back());
         }
+        ///////where you should change your Maze creation method////////////////////////////////////////////////////////
         while(!negh_avai.empty()){
             auto curr_rect = path.back();
             RectNode* new_negh;
             nn = rand() % negh_avai.size();
-            if(negh_avai[nn] == RectNode::others::down){
+            if(negh_avai[nn] == RectNode::direction::down){
                 new_negh = matrix[curr_rect->x][curr_rect->y+1];
-            }else if(negh_avai[nn] == RectNode::others::left){
+            }else if(negh_avai[nn] == RectNode::direction::left){
                 new_negh = matrix[curr_rect->x-1][curr_rect->y];
-            }else if(negh_avai[nn] == RectNode::others::up){
+            }else if(negh_avai[nn] == RectNode::direction::up){
                 new_negh = matrix[curr_rect->x][curr_rect->y-1];
             }else {
                 new_negh = matrix[curr_rect->x+1][curr_rect->y];
             }
-            RectNode::make_neighbour(curr_rect,new_negh);
+            RectNode::make_neighbour(curr_rect,new_negh,m,n);
             new_negh->set_passed(true);
-            //            stack.push(new_negh);
             path.push_back(new_negh);
             negh_avai = neighbour_available(path.back());
         }
@@ -258,22 +247,20 @@ bool Maze::is_in_path(const int& x,const int& y, const std::deque<RectNode *> &p
     return true;
 }
 bool Maze::is_passed(const int& x,const int& y){
-    //    std::cout <<"checking passed : x is: " <<x<<" y is: "<<y<<std::endl;
     return matrix[x][y]->get_passed();
 }
 std::vector<int> Maze::neighbour_available(RectNode* rec)
 {
-    //    std::cout <<"starting point-> rec : x is: " <<rec->x<<" y is: "<<rec->y<<std::endl;
     std::vector<int> negh{};
     for(auto [key,value] : rec->neighbours){
         if(value ==nullptr){
-            if(key== RectNode::others::up && !is_in_path(rec->x,rec->y-1,path) && !is_passed(rec->x,rec->y-1)){
+            if(key== RectNode::direction::up && !is_in_path(rec->x,rec->y-1,path) && !is_passed(rec->x,rec->y-1)){
                 negh.push_back(key);
-            }else if(key== RectNode::others::right && !is_in_path(rec->x+1,rec->y,path)&& !is_passed(rec->x+1,rec->y)){
+            }else if(key== RectNode::direction::right && !is_in_path(rec->x+1,rec->y,path)&& !is_passed(rec->x+1,rec->y)){
                 negh.push_back(key);
-            }else if(key== RectNode::others::down && !is_in_path(rec->x,rec->y+1,path)&& !is_passed(rec->x,rec->y+1)){
+            }else if(key== RectNode::direction::down && !is_in_path(rec->x,rec->y+1,path)&& !is_passed(rec->x,rec->y+1)){
                 negh.push_back(key);
-            }else if(key== RectNode::others::left && !is_in_path(rec->x-1,rec->y,path)&& !is_passed(rec->x-1,rec->y)){
+            }else if(key== RectNode::direction::left && !is_in_path(rec->x-1,rec->y,path)&& !is_passed(rec->x-1,rec->y)){
                 negh.push_back(key);
             }
         }

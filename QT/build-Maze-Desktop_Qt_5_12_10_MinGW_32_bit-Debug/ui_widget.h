@@ -46,6 +46,8 @@ public:
         sizePolicy.setVerticalStretch(0);
         sizePolicy.setHeightForWidth(Widget->sizePolicy().hasHeightForWidth());
         Widget->setSizePolicy(sizePolicy);
+        Widget->setMinimumSize(QSize(0, 0));
+        Widget->setMaximumSize(QSize(582, 200));
         Widget->setBaseSize(QSize(0, 0));
         QPalette palette;
         QBrush brush(QColor(0, 0, 0, 255));

@@ -7,7 +7,7 @@
     <x>0</x>
     <y>0</y>
     <width>800</width>
-    <height>700</height>
+    <height>800</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -18,10 +18,16 @@
     <layout class="QVBoxLayout" name="maze_view_lay">
      <item>
       <widget class="QGraphicsView" name="gv">
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="Preferred" vsizetype="Expanding">
+         <horstretch>0</horstretch>
+         <verstretch>0</verstretch>
+        </sizepolicy>
+       </property>
        <property name="minimumSize">
         <size>
-         <width>400</width>
-         <height>300</height>
+         <width>0</width>
+         <height>0</height>
         </size>
        </property>
       </widget>
@@ -45,12 +51,12 @@
          </property>
          <property name="maximumSize">
           <size>
-           <width>50</width>
+           <width>30</width>
            <height>50</height>
           </size>
          </property>
          <property name="text">
-          <string>LEFT</string>
+          <string>L</string>
          </property>
         </widget>
        </item>
@@ -64,12 +70,12 @@
          </property>
          <property name="maximumSize">
           <size>
-           <width>50</width>
+           <width>30</width>
            <height>50</height>
           </size>
          </property>
          <property name="text">
-          <string>UP</string>
+          <string>U</string>
          </property>
         </widget>
        </item>
@@ -83,12 +89,12 @@
          </property>
          <property name="maximumSize">
           <size>
-           <width>50</width>
+           <width>30</width>
            <height>50</height>
           </size>
          </property>
          <property name="text">
-          <string>DOWN</string>
+          <string>D</string>
          </property>
         </widget>
        </item>
@@ -102,12 +108,12 @@
          </property>
          <property name="maximumSize">
           <size>
-           <width>50</width>
+           <width>30</width>
            <height>50</height>
           </size>
          </property>
          <property name="text">
-          <string>RIGHT</string>
+          <string>R</string>
          </property>
         </widget>
        </item>
@@ -121,18 +127,18 @@
           <widget class="QPushButton" name="btn_dfs">
            <property name="minimumSize">
             <size>
-             <width>100</width>
-             <height>50</height>
+             <width>70</width>
+             <height>40</height>
             </size>
            </property>
            <property name="maximumSize">
             <size>
-             <width>200</width>
-             <height>50</height>
+             <width>70</width>
+             <height>40</height>
             </size>
            </property>
            <property name="text">
-            <string>solve with DFS</string>
+            <string>DFS</string>
            </property>
           </widget>
          </item>
@@ -140,18 +146,18 @@
           <widget class="QPushButton" name="btn_bfs">
            <property name="minimumSize">
             <size>
-             <width>100</width>
-             <height>50</height>
+             <width>70</width>
+             <height>40</height>
             </size>
            </property>
            <property name="maximumSize">
             <size>
-             <width>200</width>
-             <height>50</height>
+             <width>70</width>
+             <height>40</height>
             </size>
            </property>
            <property name="text">
-            <string>solve with BFS</string>
+            <string>BFS</string>
            </property>
           </widget>
          </item>
@@ -165,12 +171,18 @@
         <widget class="QPushButton" name="pushButton_5">
          <property name="minimumSize">
           <size>
-           <width>0</width>
-           <height>50</height>
+           <width>70</width>
+           <height>40</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>70</width>
+           <height>40</height>
           </size>
          </property>
          <property name="text">
-          <string>RESET PATH</string>
+          <string>Reset</string>
          </property>
         </widget>
        </item>
