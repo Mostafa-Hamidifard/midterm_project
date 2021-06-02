@@ -3,17 +3,18 @@
 #include<vector>
 #include "rectnode.h"
 #include<QGraphicsScene>
+#include<QGraphicsView>
 #include <stdlib.h>     /* srand, rand */
 #include <time.h>
 #include<deque>
 class Maze
 {
 public:
-    Maze(int m,int n);
+    Maze(QGraphicsView*,QGraphicsScene* scene,int m,int n);
     ~Maze();
     int m{},n{};
     std::vector<std::vector<RectNode*>> matrix;
-    void add_maze(QGraphicsScene* scene);
+    void add_maze();
     static void update_rect_colors(RectNode* node);
     void clear_path();
     enum direction{left=0,right=1,up=2,down=3};
@@ -23,6 +24,8 @@ public:
     void solveDFS();
     bool Depth_first_search(RectNode* head);
 private:
+    QGraphicsView* gview;
+    QGraphicsScene* scene;
     std::vector<int> neighbour_available(RectNode* rec);
     void create_maze();
     bool is_any_rect_notpassed();

@@ -1,9 +1,11 @@
 #include "maze.h"
 #include<QDebug>
 #include<iostream>
-#include<windows.h>
-Maze::Maze(int _m,int _n):m{_m},n{_n}
+#include<QThread>
+Maze::Maze(QGraphicsView* _g,QGraphicsScene* _s,int _m,int _n):m{_m},n{_n}
 {
+    scene = _s;
+    gview = _g;
     for(int i{0};i<m;i++){
         std::vector<RectNode*> nodes{};
         for(int j{0};j<n;j++){
@@ -39,7 +41,7 @@ Maze::~Maze(){
     }
     qDebug()<<"destruction ended";
 }
-void Maze::add_maze(QGraphicsScene* scene){
+void Maze::add_maze(){
     for(int i{0};i<m;i++)
         for(int j{0};j<n;j++)
             matrix[i][j]->add_node(scene);
@@ -163,6 +165,7 @@ void Maze::create_maze()
         }
         ///////where you should change your Maze creation method////////////////////////////////////////////////////////
         while(!negh_avai.empty()){
+
             auto curr_rect = path.back();
             RectNode* new_negh;
             nn = rand() % negh_avai.size();

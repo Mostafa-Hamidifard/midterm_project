@@ -16,8 +16,8 @@ maze_page::maze_page(QWidget *parent,int m,int n) :
 
     scene->setBackgroundBrush(QColor{40, 116, 166});
     ui->gv->setAlignment(Qt::AlignTop|Qt::AlignCenter);
-    maze = new Maze(m,n);
-    maze->add_maze(scene);
+    maze = new Maze(ui->gv,scene,m,n);
+    maze->add_maze();
    // this->showMaximized();
 }
 
