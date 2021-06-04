@@ -7,6 +7,7 @@
 #include <stdlib.h>     /* srand, rand */
 #include<deque>
 #include<QDebug>
+#include "dfssolverthread.h"
 class Maze
 {
 public:

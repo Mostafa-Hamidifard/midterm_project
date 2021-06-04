@@ -177,9 +177,9 @@ void Maze::solveDFS(){
         qDebug()<<"DFS begins:";
         Maze::Depth_first_search(matrix[0][0]);
     }
-    for(auto item:path){
-        item->set_passed(true);
-    }
+//    for(auto item:path){
+//        item->set_passed(true);
+//    }
 }
 bool Maze::Depth_first_search(RectNode* head){
     path.push_back(head);
