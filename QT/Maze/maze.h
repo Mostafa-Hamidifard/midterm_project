@@ -3,15 +3,15 @@
 #include<vector>
 #include "rectnode.h"
 #include<QGraphicsScene>
-#include<QGraphicsView>
 #include <stdlib.h>     /* srand, rand */
 #include<deque>
 #include<QDebug>
 #include "dfssolverthread.h"
-class Maze
+#include "bfssolverthread.h"
+class Maze :  public QObject
 {
 public:
-    Maze(QGraphicsView*,QGraphicsScene* scene,int m,int n);
+    Maze(QGraphicsScene* scene,int m,int n);
     ~Maze();
     int m{},n{};
     std::vector<std::vector<RectNode*>> matrix;
@@ -22,10 +22,10 @@ public:
     void change_head(direction d);
     void solveBFS();
     void solveDFS();
-    bool Depth_first_search(RectNode* head);
     std::deque<RectNode *> get_children(RectNode *);
+public slots:
+    void do_update_scene(RectNode* node,bool state);
 private:
-    QGraphicsView* gview;
     QGraphicsScene* scene;
     std::vector<int> neighbour_available(RectNode* rec);
     void create_maze();
@@ -33,7 +33,6 @@ private:
     bool is_in_path(const int& x,const int& y,const std::deque<RectNode*>& path) const;
     std::deque<RectNode*> path{};
     bool is_passed(const int& x,const int& y);
-
 };
 
 #endif // MAZE_H

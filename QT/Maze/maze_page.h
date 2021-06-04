@@ -31,7 +31,6 @@ private slots:
     void on_btn_bfs_clicked();
 
     void on_btn_dfs_clicked();
-
 private:
     Ui::maze_page *ui;
 };

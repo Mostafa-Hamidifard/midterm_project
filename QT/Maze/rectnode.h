@@ -1,12 +1,10 @@
 #ifndef RECTNODE_H
 #define RECTNODE_H
-
 #include<QGraphicsRectItem>
 #include<QtGui>
 #include<QGraphicsScene>
 #include<map>
 #include<vector>
-#include<memory>
 class RectNode
 {
 public:

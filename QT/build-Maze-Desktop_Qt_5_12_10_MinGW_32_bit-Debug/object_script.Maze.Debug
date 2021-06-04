@@ -1,0 +1,11 @@
+debug/bfssolverthread.o
+debug/dfssolverthread.o
+debug/main.o
+debug/maze.o
+debug/maze_page.o
+debug/rectnode.o
+debug/widget.o
+debug/moc_bfssolverthread.o
+debug/moc_dfssolverthread.o
+debug/moc_maze_page.o
+debug/moc_widget.o

@@ -1,9 +1,8 @@
 #include "maze.h"
-
-Maze::Maze(QGraphicsView* _g,QGraphicsScene* _s,int _m,int _n):m{_m},n{_n}
+#include<QtEvents>
+Maze::Maze(QGraphicsScene* _scene,int _m,int _n):m{_m},n{_n}
 {
-    scene = _s;
-    gview = _g;
+    scene = _scene;
     for(int i{0};i<m;i++){
         std::vector<RectNode*> nodes{};
         for(int j{0};j<n;j++){
@@ -74,52 +73,19 @@ void Maze::change_head(Maze::direction d)
 
 }
 
-std::deque<RectNode*> Maze::get_children(RectNode* node){
-    std::vector<RectNode*> temp_neigh{node->real_neighbours()};
-    std::deque<RectNode*> result{};
-    for(auto it{temp_neigh.begin()};it != temp_neigh.end();it++){
-        if((*it)==node->parent)
-            continue;
-        else
-            result.push_back((*it));
-    }
-    return result;
-}
+
 void Maze::solveBFS()
 {
-    path.clear();
+    clear_path();
     if(m==1&&n==1)
         return;
-    bool target_found{false};
-    std::deque<RectNode*>   children{ get_children(matrix[0][0])};
-    for(RectNode* child:children)
-        child->parent = matrix[0][0];
-    while(target_found == 0){
-        for(RectNode* child: children){
-            qDebug()<<"checking child x="<<child->x<<" y="<<child->y;
-            if(child == matrix[m-1][n-1]){
-                target_found=true;
-                break;
-            }
-        }
-        std::deque<RectNode*>  temp_children{};
-        for(RectNode* item:children){
-            std::deque<RectNode*> temp2{get_children(item)};
-            for(RectNode* item2:temp2){
-                item2->parent=item;
-                temp_children.push_back(item2);
-            }
-        }
-        children.swap(temp_children);
-    }
-    path.push_back(matrix[m-1][n-1]);
-    RectNode* parent_node = matrix[m-1][n-1]->parent;
-    while(parent_node->parent!= nullptr){
-        path.push_back(parent_node);
-        parent_node=parent_node->parent;
-    }
-    for(auto item:path)
-        item->set_passed(true);
+    qDebug()<<"BFS begins:";
+    bfsSolverThread solver{path,matrix,m,n};
+ //   solver.btn_reset = reset_btn;
+    solver.delay = 10;
+    QObject::connect(&solver, &bfsSolverThread::update_scene,
+                         this, &Maze::do_update_scene);
+    solver.run();
 
 }
 void Maze::create_maze()
@@ -160,7 +126,6 @@ void Maze::create_maze()
         }
         path.pop_back();
         path.pop_back();
-        //        std::cout<<"top of stack is: "<<path.back()->x <<" " <<path.back()->y<<"and top of path is: "<<path.back()->x<<" "<<path.back()->y<<"\n";
         neighbour_available(path.back());
     }
     // setting all passed vars to false
@@ -170,40 +135,18 @@ void Maze::create_maze()
     path.clear();
 }
 void Maze::solveDFS(){
-    path.clear();
+    clear_path();
     if(m==1&&n==1){
         return;
     }else{
         qDebug()<<"DFS begins:";
-        Maze::Depth_first_search(matrix[0][0]);
+        DFSsolverThread solver{path,matrix,m,n};
+      //  solver.btn_reset = reset_btn;
+        solver.delay = 10;
+        QObject::connect(&solver, &DFSsolverThread::update_scene,
+                             this, &Maze::do_update_scene);
+        solver.run();
     }
-//    for(auto item:path){
-//        item->set_passed(true);
-//    }
-}
-bool Maze::Depth_first_search(RectNode* head){
-    path.push_back(head);
-    if(head == matrix[m-1][n-1]){
-        return true;
-    }
-    if(head->real_neighbours().empty()==true){
-        path.pop_back();
-        return false;
-    }
-    for(auto  value: head->real_neighbours()){
-        if(head != matrix[0][0]){ //to avoid error loop
-            if(value == *(path.end()-2)){
-                continue;
-            }
-        }
-        bool result =  Depth_first_search(value);
-        if(result){
-            qDebug()<<"I am :"<<head->x<<" "<<head->y;
-            return true;
-        }
-    }//searching that head completed without any success
-    path.pop_back();
-    return false;
 }
 bool Maze::is_any_rect_notpassed()
 {
@@ -246,3 +189,8 @@ std::vector<int> Maze::neighbour_available(RectNode* rec)
     return negh;
 }
 
+void Maze::do_update_scene(RectNode* node,bool state){
+    node->set_passed(state);
+    QEventLoop ql;
+    ql.processEvents(QEventLoop::AllEvents);
+}
