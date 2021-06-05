@@ -17,7 +17,6 @@ maze_page::maze_page(QWidget *parent,int m,int n) :
     ui->gv->setAlignment(Qt::AlignTop|Qt::AlignCenter);
     maze = new Maze(scene,m,n);
     maze->add_maze();
-    // this->showMaximized();
 }
 
 maze_page::~maze_page()

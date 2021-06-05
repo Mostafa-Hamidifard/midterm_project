@@ -8,7 +8,6 @@ std::vector<std::vector<RectNode*>> &_matrix,int _m,int _n):
 }
 void DFSsolverThread::run(){
     Depth_first_search(matrix[0][0]);
-    //btn_reset->setEnabled(true);
 }
 bool DFSsolverThread::Depth_first_search(RectNode* head){
     QMutex mutex;

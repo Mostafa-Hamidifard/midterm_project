@@ -8,6 +8,7 @@ bfsSolverThread::bfsSolverThread(std::deque<RectNode *> &_path,
 
 void bfsSolverThread::run()
 {
+
     bool target_found{false};
     std::deque<RectNode*>   children{ get_children(matrix[0][0])};
     update_scene(matrix[0][0],true);

@@ -19,6 +19,7 @@ public:
     int m;
     int n;
     unsigned long delay = 50;
+    bool stop = false;
 };
 
 #endif // DFSSOLVERTHREAD_H

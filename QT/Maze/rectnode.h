@@ -32,14 +32,14 @@ public:
                                                    {up_rec,nullptr},
                                                    {right_rec,nullptr},
                                                    {down_rec,nullptr}};
+    const QColor passed_color{241, 196, 15};
+    const  QColor not_passed_color{0xff,0xff,0xff};
+    const  QColor block_color {40, 116, 166};
+    const  QColor no_block_color{0xff,0xff,0xff};
 private:
     bool passed{false};
     int center_scale{25};
     int corner_scale{4};
-    const  QColor passed_color{241, 196, 15};
-    const  QColor not_passed_color{0xff,0xff,0xff};
-    const  QColor block_color {40, 116, 166};
-    const  QColor no_block_color{0xff,0xff,0xff};
 };
 
 #endif // RECTNODE_H

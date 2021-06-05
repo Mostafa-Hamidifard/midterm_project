@@ -89,6 +89,7 @@ void RectNode::update_rect_nei_colors(int m,int n)
                  this->rect_container[left_rec]->setBrush(no_block_color);
             }else if(key == this->right){
                 this->rect_container[right_rec]->setBrush(no_block_color);
+                qDebug()<<"error";
             }else if(key == this->up){
                 this->rect_container[up_rec]->setBrush(no_block_color);
             }else if(key == this->down){

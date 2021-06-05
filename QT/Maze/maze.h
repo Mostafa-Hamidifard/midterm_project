@@ -5,7 +5,6 @@
 #include<QGraphicsScene>
 #include <stdlib.h>     /* srand, rand */
 #include<deque>
-#include<QDebug>
 #include "dfssolverthread.h"
 #include "bfssolverthread.h"
 class Maze :  public QObject
@@ -26,6 +25,7 @@ public:
 public slots:
     void do_update_scene(RectNode* node,bool state);
 private:
+    std::vector<QThread*> thread_list{};
     QGraphicsScene* scene;
     std::vector<int> neighbour_available(RectNode* rec);
     void create_maze();

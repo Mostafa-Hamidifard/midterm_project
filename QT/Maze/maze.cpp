@@ -1,5 +1,7 @@
 #include "maze.h"
 #include<QtEvents>
+
+
 Maze::Maze(QGraphicsScene* _scene,int _m,int _n):m{_m},n{_n}
 {
     scene = _scene;
@@ -17,6 +19,7 @@ Maze::Maze(QGraphicsScene* _scene,int _m,int _n):m{_m},n{_n}
             }if(j == n-1){
                 negh->erase(negh->find(RectNode::direction::down));
             }
+
             nodes.push_back(nod);
             nodes[j]->update_rect_nei_colors(m,n); // to make borders at first
         }
@@ -30,13 +33,11 @@ Maze::Maze(QGraphicsScene* _scene,int _m,int _n):m{_m},n{_n}
     matrix[0][0]->set_passed(true);
 }
 Maze::~Maze(){
-    qDebug()<<"destruction started";
     for(int i{0};i<m;i++){
         for(int j{0};j<n;j++){
             delete matrix[i][j];
         }
     }
-    qDebug()<<"destruction ended";
 }
 void Maze::add_maze(){
     for(int i{0};i<m;i++)
@@ -57,11 +58,9 @@ void Maze::clear_path()
 void Maze::change_head(Maze::direction d)
 {
     RectNode* ohead = path.back();
-    //  std::cout<<"in change head\n";
     auto negh{ohead->neighbours.find(d)};
     if(negh == ohead->neighbours.end() || negh->second==nullptr)
         return;
-    qDebug()<<"x: "<<ohead->x<<" y: "<<ohead->y;
     RectNode* rec_negh{negh->second};
     if(is_in_path(rec_negh->x,rec_negh->y,path)){
         ohead->set_passed(false);
@@ -79,10 +78,8 @@ void Maze::solveBFS()
     clear_path();
     if(m==1&&n==1)
         return;
-    qDebug()<<"BFS begins:";
     bfsSolverThread solver{path,matrix,m,n};
- //   solver.btn_reset = reset_btn;
-    solver.delay = 10;
+    solver.delay = 32;
     QObject::connect(&solver, &bfsSolverThread::update_scene,
                          this, &Maze::do_update_scene);
     solver.run();
@@ -98,15 +95,8 @@ void Maze::create_maze()
     while (is_any_rect_notpassed()) {
         while(negh_avai.empty()){
             path.pop_back();
-            //            if(path.empty()==0){
-            //                path.push_back(matrix[0][0]);
-            //            }
-
-            negh_avai = neighbour_available(path.back());
-        }
-        ///////where you should change your Maze creation method////////////////////////////////////////////////////////
+            negh_avai = neighbour_available(path.back());          }
         while(!negh_avai.empty()){
-
             auto curr_rect = path.back();
             RectNode* new_negh;
             nn = rand() % negh_avai.size();
@@ -126,7 +116,7 @@ void Maze::create_maze()
         }
         path.pop_back();
         path.pop_back();
-        neighbour_available(path.back());
+     negh_avai=  neighbour_available(path.back());
     }
     // setting all passed vars to false
     for(auto row: matrix)
@@ -141,8 +131,7 @@ void Maze::solveDFS(){
     }else{
         qDebug()<<"DFS begins:";
         DFSsolverThread solver{path,matrix,m,n};
-      //  solver.btn_reset = reset_btn;
-        solver.delay = 10;
+        solver.delay = 32;
         QObject::connect(&solver, &DFSsolverThread::update_scene,
                              this, &Maze::do_update_scene);
         solver.run();
@@ -159,7 +148,9 @@ bool Maze::is_any_rect_notpassed()
     return false;
 }
 bool Maze::is_in_path(const int& x,const int& y, const std::deque<RectNode *> &path) const
-{  if(x<0 || x >= m || y<0 || y>=n)
+{   if(m==1 && n==1)
+        return true;
+    if(x<0 || x >= m || y<0 || y>=n)
         throw std::out_of_range("out of maze");
     RectNode* rec{matrix[x][y]};
     auto it{ std::find(path.cbegin(),path.cend(),rec)};
