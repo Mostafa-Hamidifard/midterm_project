@@ -15,7 +15,6 @@ public:
     int m{},n{};
     std::vector<std::vector<RectNode*>> matrix;
     void add_maze();
-    static void update_rect_colors(RectNode* node);
     void clear_path();
     enum direction{left=0,right=1,up=2,down=3};
     void change_head(direction d);
