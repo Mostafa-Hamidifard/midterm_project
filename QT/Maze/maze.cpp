@@ -21,7 +21,7 @@ Maze::Maze(QGraphicsScene* _scene,int _m,int _n):m{_m},n{_n}
             }
 
             nodes.push_back(nod);
-            nodes[j]->update_rect_nei_colors(m,n); // to make borders at first
+
         }
         matrix.push_back(nodes);
     }

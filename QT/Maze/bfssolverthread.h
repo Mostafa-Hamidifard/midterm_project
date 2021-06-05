@@ -19,7 +19,6 @@ public:
     int n;
     unsigned long delay = 50;
     std::deque<RectNode*> get_children(RectNode* node);
-    bool stop =false;
 };
 
 #endif // BFSSOLVERTHREAD_H

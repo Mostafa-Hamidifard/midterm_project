@@ -470,11 +470,6 @@ debug/moc_bfssolverthread.cpp: ../Maze/bfssolverthread.h \
 		C:/Qt/Qt5.12.10/5.12.10/mingw73_32/include/QtGui/qtguiversion.h \
 		C:/Qt/Qt5.12.10/5.12.10/mingw73_32/include/QtWidgets/QGraphicsScene \
 		C:/Qt/Qt5.12.10/5.12.10/mingw73_32/include/QtWidgets/qgraphicsscene.h \
-		C:/Qt/Qt5.12.10/5.12.10/mingw73_32/include/QtWidgets/QPushButton \
-		C:/Qt/Qt5.12.10/5.12.10/mingw73_32/include/QtWidgets/qpushbutton.h \
-		C:/Qt/Qt5.12.10/5.12.10/mingw73_32/include/QtWidgets/qabstractbutton.h \
-		C:/Qt/Qt5.12.10/5.12.10/mingw73_32/include/QtWidgets/qwidget.h \
-		C:/Qt/Qt5.12.10/5.12.10/mingw73_32/include/QtWidgets/qsizepolicy.h \
 		debug/moc_predefs.h \
 		C:/Qt/Qt5.12.10/5.12.10/mingw73_32/bin/moc.exe
 	C:\Qt\Qt5.12.10\5.12.10\mingw73_32\bin\moc.exe $(DEFINES) --include "E:/6th semeter/Advanced programming/projects/midterm_project/QT/build-Maze-Desktop_Qt_5_12_10_MinGW_32_bit-Release/debug/moc_predefs.h" -IC:/Qt/Qt5.12.10/5.12.10/mingw73_32/mkspecs/win32-g++ -I"E:/6th semeter/Advanced programming/projects/midterm_project/QT/Maze" -IC:/Qt/Qt5.12.10/5.12.10/mingw73_32/include -IC:/Qt/Qt5.12.10/5.12.10/mingw73_32/include/QtWidgets -IC:/Qt/Qt5.12.10/5.12.10/mingw73_32/include/QtGui -IC:/Qt/Qt5.12.10/5.12.10/mingw73_32/include/QtANGLE -IC:/Qt/Qt5.12.10/5.12.10/mingw73_32/include/QtCore -I. -IC:/Qt/Qt5.12.10/Tools/mingw730_32/lib/gcc/i686-w64-mingw32/7.3.0/include/c++ -IC:/Qt/Qt5.12.10/Tools/mingw730_32/lib/gcc/i686-w64-mingw32/7.3.0/include/c++/i686-w64-mingw32 -IC:/Qt/Qt5.12.10/Tools/mingw730_32/lib/gcc/i686-w64-mingw32/7.3.0/include/c++/backward -IC:/Qt/Qt5.12.10/Tools/mingw730_32/lib/gcc/i686-w64-mingw32/7.3.0/include -IC:/Qt/Qt5.12.10/Tools/mingw730_32/lib/gcc/i686-w64-mingw32/7.3.0/include-fixed -IC:/Qt/Qt5.12.10/Tools/mingw730_32/i686-w64-mingw32/include ..\Maze\bfssolverthread.h -o debug\moc_bfssolverthread.cpp
@@ -813,11 +808,6 @@ debug/moc_dfssolverthread.cpp: ../Maze/dfssolverthread.h \
 		C:/Qt/Qt5.12.10/5.12.10/mingw73_32/include/QtGui/qtguiversion.h \
 		C:/Qt/Qt5.12.10/5.12.10/mingw73_32/include/QtWidgets/QGraphicsScene \
 		C:/Qt/Qt5.12.10/5.12.10/mingw73_32/include/QtWidgets/qgraphicsscene.h \
-		C:/Qt/Qt5.12.10/5.12.10/mingw73_32/include/QtWidgets/QPushButton \
-		C:/Qt/Qt5.12.10/5.12.10/mingw73_32/include/QtWidgets/qpushbutton.h \
-		C:/Qt/Qt5.12.10/5.12.10/mingw73_32/include/QtWidgets/qabstractbutton.h \
-		C:/Qt/Qt5.12.10/5.12.10/mingw73_32/include/QtWidgets/qwidget.h \
-		C:/Qt/Qt5.12.10/5.12.10/mingw73_32/include/QtWidgets/qsizepolicy.h \
 		debug/moc_predefs.h \
 		C:/Qt/Qt5.12.10/5.12.10/mingw73_32/bin/moc.exe
 	C:\Qt\Qt5.12.10\5.12.10\mingw73_32\bin\moc.exe $(DEFINES) --include "E:/6th semeter/Advanced programming/projects/midterm_project/QT/build-Maze-Desktop_Qt_5_12_10_MinGW_32_bit-Release/debug/moc_predefs.h" -IC:/Qt/Qt5.12.10/5.12.10/mingw73_32/mkspecs/win32-g++ -I"E:/6th semeter/Advanced programming/projects/midterm_project/QT/Maze" -IC:/Qt/Qt5.12.10/5.12.10/mingw73_32/include -IC:/Qt/Qt5.12.10/5.12.10/mingw73_32/include/QtWidgets -IC:/Qt/Qt5.12.10/5.12.10/mingw73_32/include/QtGui -IC:/Qt/Qt5.12.10/5.12.10/mingw73_32/include/QtANGLE -IC:/Qt/Qt5.12.10/5.12.10/mingw73_32/include/QtCore -I. -IC:/Qt/Qt5.12.10/Tools/mingw730_32/lib/gcc/i686-w64-mingw32/7.3.0/include/c++ -IC:/Qt/Qt5.12.10/Tools/mingw730_32/lib/gcc/i686-w64-mingw32/7.3.0/include/c++/i686-w64-mingw32 -IC:/Qt/Qt5.12.10/Tools/mingw730_32/lib/gcc/i686-w64-mingw32/7.3.0/include/c++/backward -IC:/Qt/Qt5.12.10/Tools/mingw730_32/lib/gcc/i686-w64-mingw32/7.3.0/include -IC:/Qt/Qt5.12.10/Tools/mingw730_32/lib/gcc/i686-w64-mingw32/7.3.0/include-fixed -IC:/Qt/Qt5.12.10/Tools/mingw730_32/i686-w64-mingw32/include ..\Maze\dfssolverthread.h -o debug\moc_dfssolverthread.cpp
@@ -1160,19 +1150,9 @@ debug/moc_maze_page.cpp: ../Maze/maze_page.h \
 		C:/Qt/Qt5.12.10/5.12.10/mingw73_32/include/QtGui/qtguiversion.h \
 		C:/Qt/Qt5.12.10/5.12.10/mingw73_32/include/QtWidgets/QGraphicsScene \
 		C:/Qt/Qt5.12.10/5.12.10/mingw73_32/include/QtWidgets/qgraphicsscene.h \
-		C:/Qt/Qt5.12.10/5.12.10/mingw73_32/include/QtWidgets/QGraphicsView \
-		C:/Qt/Qt5.12.10/5.12.10/mingw73_32/include/QtWidgets/qgraphicsview.h \
-		C:/Qt/Qt5.12.10/5.12.10/mingw73_32/include/QtWidgets/qscrollarea.h \
-		C:/Qt/Qt5.12.10/5.12.10/mingw73_32/include/QtWidgets/qabstractscrollarea.h \
-		C:/Qt/Qt5.12.10/5.12.10/mingw73_32/include/QtWidgets/qframe.h \
-		C:/Qt/Qt5.12.10/5.12.10/mingw73_32/include/QtCore/QDebug \
 		../Maze/dfssolverthread.h \
 		C:/Qt/Qt5.12.10/5.12.10/mingw73_32/include/QtCore/QThread \
-		C:/Qt/Qt5.12.10/5.12.10/mingw73_32/include/QtWidgets/QPushButton \
-		C:/Qt/Qt5.12.10/5.12.10/mingw73_32/include/QtWidgets/qpushbutton.h \
-		C:/Qt/Qt5.12.10/5.12.10/mingw73_32/include/QtWidgets/qabstractbutton.h \
 		../Maze/bfssolverthread.h \
-		../Maze/maze_page.h \
 		debug/moc_predefs.h \
 		C:/Qt/Qt5.12.10/5.12.10/mingw73_32/bin/moc.exe
 	C:\Qt\Qt5.12.10\5.12.10\mingw73_32\bin\moc.exe $(DEFINES) --include "E:/6th semeter/Advanced programming/projects/midterm_project/QT/build-Maze-Desktop_Qt_5_12_10_MinGW_32_bit-Release/debug/moc_predefs.h" -IC:/Qt/Qt5.12.10/5.12.10/mingw73_32/mkspecs/win32-g++ -I"E:/6th semeter/Advanced programming/projects/midterm_project/QT/Maze" -IC:/Qt/Qt5.12.10/5.12.10/mingw73_32/include -IC:/Qt/Qt5.12.10/5.12.10/mingw73_32/include/QtWidgets -IC:/Qt/Qt5.12.10/5.12.10/mingw73_32/include/QtGui -IC:/Qt/Qt5.12.10/5.12.10/mingw73_32/include/QtANGLE -IC:/Qt/Qt5.12.10/5.12.10/mingw73_32/include/QtCore -I. -IC:/Qt/Qt5.12.10/Tools/mingw730_32/lib/gcc/i686-w64-mingw32/7.3.0/include/c++ -IC:/Qt/Qt5.12.10/Tools/mingw730_32/lib/gcc/i686-w64-mingw32/7.3.0/include/c++/i686-w64-mingw32 -IC:/Qt/Qt5.12.10/Tools/mingw730_32/lib/gcc/i686-w64-mingw32/7.3.0/include/c++/backward -IC:/Qt/Qt5.12.10/Tools/mingw730_32/lib/gcc/i686-w64-mingw32/7.3.0/include -IC:/Qt/Qt5.12.10/Tools/mingw730_32/lib/gcc/i686-w64-mingw32/7.3.0/include-fixed -IC:/Qt/Qt5.12.10/Tools/mingw730_32/i686-w64-mingw32/include ..\Maze\maze_page.h -o debug\moc_maze_page.cpp
@@ -1645,12 +1625,7 @@ debug/bfssolverthread.o: ../Maze/bfssolverthread.cpp ../Maze/bfssolverthread.h \
 		C:/Qt/Qt5.12.10/5.12.10/mingw73_32/include/QtGui/qvalidator.h \
 		C:/Qt/Qt5.12.10/5.12.10/mingw73_32/include/QtGui/qtguiversion.h \
 		C:/Qt/Qt5.12.10/5.12.10/mingw73_32/include/QtWidgets/QGraphicsScene \
-		C:/Qt/Qt5.12.10/5.12.10/mingw73_32/include/QtWidgets/qgraphicsscene.h \
-		C:/Qt/Qt5.12.10/5.12.10/mingw73_32/include/QtWidgets/QPushButton \
-		C:/Qt/Qt5.12.10/5.12.10/mingw73_32/include/QtWidgets/qpushbutton.h \
-		C:/Qt/Qt5.12.10/5.12.10/mingw73_32/include/QtWidgets/qabstractbutton.h \
-		C:/Qt/Qt5.12.10/5.12.10/mingw73_32/include/QtWidgets/qwidget.h \
-		C:/Qt/Qt5.12.10/5.12.10/mingw73_32/include/QtWidgets/qsizepolicy.h
+		C:/Qt/Qt5.12.10/5.12.10/mingw73_32/include/QtWidgets/qgraphicsscene.h
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o debug\bfssolverthread.o ..\Maze\bfssolverthread.cpp
 
 debug/dfssolverthread.o: ../Maze/dfssolverthread.cpp ../Maze/dfssolverthread.h \
@@ -1986,12 +1961,7 @@ debug/dfssolverthread.o: ../Maze/dfssolverthread.cpp ../Maze/dfssolverthread.h \
 		C:/Qt/Qt5.12.10/5.12.10/mingw73_32/include/QtGui/qvalidator.h \
 		C:/Qt/Qt5.12.10/5.12.10/mingw73_32/include/QtGui/qtguiversion.h \
 		C:/Qt/Qt5.12.10/5.12.10/mingw73_32/include/QtWidgets/QGraphicsScene \
-		C:/Qt/Qt5.12.10/5.12.10/mingw73_32/include/QtWidgets/qgraphicsscene.h \
-		C:/Qt/Qt5.12.10/5.12.10/mingw73_32/include/QtWidgets/QPushButton \
-		C:/Qt/Qt5.12.10/5.12.10/mingw73_32/include/QtWidgets/qpushbutton.h \
-		C:/Qt/Qt5.12.10/5.12.10/mingw73_32/include/QtWidgets/qabstractbutton.h \
-		C:/Qt/Qt5.12.10/5.12.10/mingw73_32/include/QtWidgets/qwidget.h \
-		C:/Qt/Qt5.12.10/5.12.10/mingw73_32/include/QtWidgets/qsizepolicy.h
+		C:/Qt/Qt5.12.10/5.12.10/mingw73_32/include/QtWidgets/qgraphicsscene.h
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o debug\dfssolverthread.o ..\Maze\dfssolverthread.cpp
 
 debug/main.o: ../Maze/main.cpp ../Maze/widget.h \
@@ -2440,23 +2410,9 @@ debug/maze.o: ../Maze/maze.cpp ../Maze/maze.h \
 		C:/Qt/Qt5.12.10/5.12.10/mingw73_32/include/QtGui/qtguiversion.h \
 		C:/Qt/Qt5.12.10/5.12.10/mingw73_32/include/QtWidgets/QGraphicsScene \
 		C:/Qt/Qt5.12.10/5.12.10/mingw73_32/include/QtWidgets/qgraphicsscene.h \
-		C:/Qt/Qt5.12.10/5.12.10/mingw73_32/include/QtWidgets/QGraphicsView \
-		C:/Qt/Qt5.12.10/5.12.10/mingw73_32/include/QtWidgets/qgraphicsview.h \
-		C:/Qt/Qt5.12.10/5.12.10/mingw73_32/include/QtWidgets/qscrollarea.h \
-		C:/Qt/Qt5.12.10/5.12.10/mingw73_32/include/QtWidgets/qabstractscrollarea.h \
-		C:/Qt/Qt5.12.10/5.12.10/mingw73_32/include/QtWidgets/qframe.h \
-		C:/Qt/Qt5.12.10/5.12.10/mingw73_32/include/QtWidgets/qwidget.h \
-		C:/Qt/Qt5.12.10/5.12.10/mingw73_32/include/QtWidgets/qsizepolicy.h \
-		C:/Qt/Qt5.12.10/5.12.10/mingw73_32/include/QtCore/QDebug \
 		../Maze/dfssolverthread.h \
 		C:/Qt/Qt5.12.10/5.12.10/mingw73_32/include/QtCore/QThread \
-		C:/Qt/Qt5.12.10/5.12.10/mingw73_32/include/QtWidgets/QPushButton \
-		C:/Qt/Qt5.12.10/5.12.10/mingw73_32/include/QtWidgets/qpushbutton.h \
-		C:/Qt/Qt5.12.10/5.12.10/mingw73_32/include/QtWidgets/qabstractbutton.h \
 		../Maze/bfssolverthread.h \
-		../Maze/maze_page.h \
-		C:/Qt/Qt5.12.10/5.12.10/mingw73_32/include/QtWidgets/QDialog \
-		C:/Qt/Qt5.12.10/5.12.10/mingw73_32/include/QtWidgets/qdialog.h \
 		C:/Qt/Qt5.12.10/5.12.10/mingw73_32/include/QtGui/QtEvents
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o debug\maze.o ..\Maze\maze.cpp
 
@@ -2798,31 +2754,10 @@ debug/maze_page.o: ../Maze/maze_page.cpp ../Maze/maze_page.h \
 		C:/Qt/Qt5.12.10/5.12.10/mingw73_32/include/QtGui/qtguiversion.h \
 		C:/Qt/Qt5.12.10/5.12.10/mingw73_32/include/QtWidgets/QGraphicsScene \
 		C:/Qt/Qt5.12.10/5.12.10/mingw73_32/include/QtWidgets/qgraphicsscene.h \
-		C:/Qt/Qt5.12.10/5.12.10/mingw73_32/include/QtWidgets/QGraphicsView \
-		C:/Qt/Qt5.12.10/5.12.10/mingw73_32/include/QtWidgets/qgraphicsview.h \
-		C:/Qt/Qt5.12.10/5.12.10/mingw73_32/include/QtWidgets/qscrollarea.h \
-		C:/Qt/Qt5.12.10/5.12.10/mingw73_32/include/QtWidgets/qabstractscrollarea.h \
-		C:/Qt/Qt5.12.10/5.12.10/mingw73_32/include/QtWidgets/qframe.h \
-		C:/Qt/Qt5.12.10/5.12.10/mingw73_32/include/QtCore/QDebug \
 		../Maze/dfssolverthread.h \
 		C:/Qt/Qt5.12.10/5.12.10/mingw73_32/include/QtCore/QThread \
-		C:/Qt/Qt5.12.10/5.12.10/mingw73_32/include/QtWidgets/QPushButton \
-		C:/Qt/Qt5.12.10/5.12.10/mingw73_32/include/QtWidgets/qpushbutton.h \
-		C:/Qt/Qt5.12.10/5.12.10/mingw73_32/include/QtWidgets/qabstractbutton.h \
 		../Maze/bfssolverthread.h \
 		ui_maze_page.h \
-		C:/Qt/Qt5.12.10/5.12.10/mingw73_32/include/QtCore/QVariant \
-		C:/Qt/Qt5.12.10/5.12.10/mingw73_32/include/QtWidgets/QApplication \
-		C:/Qt/Qt5.12.10/5.12.10/mingw73_32/include/QtWidgets/qapplication.h \
-		C:/Qt/Qt5.12.10/5.12.10/mingw73_32/include/QtWidgets/qdesktopwidget.h \
-		C:/Qt/Qt5.12.10/5.12.10/mingw73_32/include/QtWidgets/QGridLayout \
-		C:/Qt/Qt5.12.10/5.12.10/mingw73_32/include/QtWidgets/qgridlayout.h \
-		C:/Qt/Qt5.12.10/5.12.10/mingw73_32/include/QtWidgets/qlayout.h \
-		C:/Qt/Qt5.12.10/5.12.10/mingw73_32/include/QtWidgets/qlayoutitem.h \
-		C:/Qt/Qt5.12.10/5.12.10/mingw73_32/include/QtWidgets/qboxlayout.h \
-		C:/Qt/Qt5.12.10/5.12.10/mingw73_32/include/QtWidgets/QHBoxLayout \
-		C:/Qt/Qt5.12.10/5.12.10/mingw73_32/include/QtWidgets/QSpacerItem \
-		C:/Qt/Qt5.12.10/5.12.10/mingw73_32/include/QtWidgets/QVBoxLayout \
 		C:/Qt/Qt5.12.10/5.12.10/mingw73_32/include/QtGui/QBrush \
 		C:/Qt/Qt5.12.10/5.12.10/mingw73_32/include/QtWidgets/QGraphicsLineItem
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o debug\maze_page.o ..\Maze\maze_page.cpp
@@ -3267,34 +3202,6 @@ debug/widget.o: ../Maze/widget.cpp ../Maze/widget.h \
 		C:/Qt/Qt5.12.10/5.12.10/mingw73_32/include/QtGui/qvector2d.h \
 		C:/Qt/Qt5.12.10/5.12.10/mingw73_32/include/QtGui/qtouchdevice.h \
 		ui_widget.h \
-		C:/Qt/Qt5.12.10/5.12.10/mingw73_32/include/QtCore/QVariant \
-		C:/Qt/Qt5.12.10/5.12.10/mingw73_32/include/QtWidgets/QApplication \
-		C:/Qt/Qt5.12.10/5.12.10/mingw73_32/include/QtWidgets/qapplication.h \
-		C:/Qt/Qt5.12.10/5.12.10/mingw73_32/include/QtCore/qcoreapplication.h \
-		C:/Qt/Qt5.12.10/5.12.10/mingw73_32/include/QtCore/qeventloop.h \
-		C:/Qt/Qt5.12.10/5.12.10/mingw73_32/include/QtWidgets/qdesktopwidget.h \
-		C:/Qt/Qt5.12.10/5.12.10/mingw73_32/include/QtGui/qguiapplication.h \
-		C:/Qt/Qt5.12.10/5.12.10/mingw73_32/include/QtGui/qinputmethod.h \
-		C:/Qt/Qt5.12.10/5.12.10/mingw73_32/include/QtWidgets/QHBoxLayout \
-		C:/Qt/Qt5.12.10/5.12.10/mingw73_32/include/QtWidgets/qboxlayout.h \
-		C:/Qt/Qt5.12.10/5.12.10/mingw73_32/include/QtWidgets/qlayout.h \
-		C:/Qt/Qt5.12.10/5.12.10/mingw73_32/include/QtWidgets/qlayoutitem.h \
-		C:/Qt/Qt5.12.10/5.12.10/mingw73_32/include/QtWidgets/qgridlayout.h \
-		C:/Qt/Qt5.12.10/5.12.10/mingw73_32/include/QtWidgets/QLabel \
-		C:/Qt/Qt5.12.10/5.12.10/mingw73_32/include/QtWidgets/qlabel.h \
-		C:/Qt/Qt5.12.10/5.12.10/mingw73_32/include/QtWidgets/qframe.h \
-		C:/Qt/Qt5.12.10/5.12.10/mingw73_32/include/QtWidgets/QLineEdit \
-		C:/Qt/Qt5.12.10/5.12.10/mingw73_32/include/QtWidgets/qlineedit.h \
-		C:/Qt/Qt5.12.10/5.12.10/mingw73_32/include/QtGui/qtextcursor.h \
-		C:/Qt/Qt5.12.10/5.12.10/mingw73_32/include/QtGui/qtextformat.h \
-		C:/Qt/Qt5.12.10/5.12.10/mingw73_32/include/QtGui/qpen.h \
-		C:/Qt/Qt5.12.10/5.12.10/mingw73_32/include/QtGui/qtextoption.h \
-		C:/Qt/Qt5.12.10/5.12.10/mingw73_32/include/QtWidgets/QPushButton \
-		C:/Qt/Qt5.12.10/5.12.10/mingw73_32/include/QtWidgets/qpushbutton.h \
-		C:/Qt/Qt5.12.10/5.12.10/mingw73_32/include/QtWidgets/qabstractbutton.h \
-		C:/Qt/Qt5.12.10/5.12.10/mingw73_32/include/QtGui/qicon.h \
-		C:/Qt/Qt5.12.10/5.12.10/mingw73_32/include/QtWidgets/QSpacerItem \
-		C:/Qt/Qt5.12.10/5.12.10/mingw73_32/include/QtWidgets/QVBoxLayout \
 		C:/Qt/Qt5.12.10/5.12.10/mingw73_32/include/QtWidgets/QMessageBox \
 		C:/Qt/Qt5.12.10/5.12.10/mingw73_32/include/QtWidgets/qmessagebox.h \
 		C:/Qt/Qt5.12.10/5.12.10/mingw73_32/include/QtWidgets/qdialog.h \
@@ -3310,6 +3217,7 @@ debug/widget.o: ../Maze/widget.cpp ../Maze/widget.h \
 		C:/Qt/Qt5.12.10/5.12.10/mingw73_32/include/QtCore/QtCoreDepends \
 		C:/Qt/Qt5.12.10/5.12.10/mingw73_32/include/QtCore/qabstractanimation.h \
 		C:/Qt/Qt5.12.10/5.12.10/mingw73_32/include/QtCore/qabstracteventdispatcher.h \
+		C:/Qt/Qt5.12.10/5.12.10/mingw73_32/include/QtCore/qeventloop.h \
 		C:/Qt/Qt5.12.10/5.12.10/mingw73_32/include/QtCore/qabstractitemmodel.h \
 		C:/Qt/Qt5.12.10/5.12.10/mingw73_32/include/QtCore/qabstractnativeeventfilter.h \
 		C:/Qt/Qt5.12.10/5.12.10/mingw73_32/include/QtCore/qabstractproxymodel.h \
@@ -3335,6 +3243,7 @@ debug/widget.o: ../Maze/widget.cpp ../Maze/widget.h \
 		C:/Qt/Qt5.12.10/5.12.10/mingw73_32/include/QtCore/qcollator.h \
 		C:/Qt/Qt5.12.10/5.12.10/mingw73_32/include/QtCore/qcommandlineoption.h \
 		C:/Qt/Qt5.12.10/5.12.10/mingw73_32/include/QtCore/qcommandlineparser.h \
+		C:/Qt/Qt5.12.10/5.12.10/mingw73_32/include/QtCore/qcoreapplication.h \
 		C:/Qt/Qt5.12.10/5.12.10/mingw73_32/include/QtCore/qcryptographichash.h \
 		C:/Qt/Qt5.12.10/5.12.10/mingw73_32/include/QtCore/qdeadlinetimer.h \
 		C:/Qt/Qt5.12.10/5.12.10/mingw73_32/include/QtCore/qelapsedtimer.h \
@@ -3427,9 +3336,13 @@ debug/widget.o: ../Maze/widget.cpp ../Maze/widget.h \
 		C:/Qt/Qt5.12.10/5.12.10/mingw73_32/include/QtCore/qtcoreversion.h \
 		C:/Qt/Qt5.12.10/5.12.10/mingw73_32/include/QtGui/qabstracttextdocumentlayout.h \
 		C:/Qt/Qt5.12.10/5.12.10/mingw73_32/include/QtGui/qtextlayout.h \
+		C:/Qt/Qt5.12.10/5.12.10/mingw73_32/include/QtGui/qtextformat.h \
+		C:/Qt/Qt5.12.10/5.12.10/mingw73_32/include/QtGui/qpen.h \
+		C:/Qt/Qt5.12.10/5.12.10/mingw73_32/include/QtGui/qtextoption.h \
 		C:/Qt/Qt5.12.10/5.12.10/mingw73_32/include/QtGui/qglyphrun.h \
 		C:/Qt/Qt5.12.10/5.12.10/mingw73_32/include/QtGui/qrawfont.h \
 		C:/Qt/Qt5.12.10/5.12.10/mingw73_32/include/QtGui/qfontdatabase.h \
+		C:/Qt/Qt5.12.10/5.12.10/mingw73_32/include/QtGui/qtextcursor.h \
 		C:/Qt/Qt5.12.10/5.12.10/mingw73_32/include/QtGui/qtextdocument.h \
 		C:/Qt/Qt5.12.10/5.12.10/mingw73_32/include/QtGui/qaccessible.h \
 		C:/Qt/Qt5.12.10/5.12.10/mingw73_32/include/QtGui/qaccessiblebridge.h \
@@ -3442,6 +3355,7 @@ debug/widget.o: ../Maze/widget.cpp ../Maze/widget.h \
 		C:/Qt/Qt5.12.10/5.12.10/mingw73_32/include/QtCore/QRect \
 		C:/Qt/Qt5.12.10/5.12.10/mingw73_32/include/QtGui/qsurface.h \
 		C:/Qt/Qt5.12.10/5.12.10/mingw73_32/include/QtGui/qsurfaceformat.h \
+		C:/Qt/Qt5.12.10/5.12.10/mingw73_32/include/QtGui/qicon.h \
 		C:/Qt/Qt5.12.10/5.12.10/mingw73_32/include/QtGui/qbitmap.h \
 		C:/Qt/Qt5.12.10/5.12.10/mingw73_32/include/QtGui/qclipboard.h \
 		C:/Qt/Qt5.12.10/5.12.10/mingw73_32/include/QtGui/qdesktopservices.h \
@@ -3449,6 +3363,8 @@ debug/widget.o: ../Maze/widget.cpp ../Maze/widget.h \
 		C:/Qt/Qt5.12.10/5.12.10/mingw73_32/include/QtGui/qgenericmatrix.h \
 		C:/Qt/Qt5.12.10/5.12.10/mingw73_32/include/QtGui/qgenericplugin.h \
 		C:/Qt/Qt5.12.10/5.12.10/mingw73_32/include/QtGui/qgenericpluginfactory.h \
+		C:/Qt/Qt5.12.10/5.12.10/mingw73_32/include/QtGui/qguiapplication.h \
+		C:/Qt/Qt5.12.10/5.12.10/mingw73_32/include/QtGui/qinputmethod.h \
 		C:/Qt/Qt5.12.10/5.12.10/mingw73_32/include/QtGui/qiconengine.h \
 		C:/Qt/Qt5.12.10/5.12.10/mingw73_32/include/QtGui/qiconengineplugin.h \
 		C:/Qt/Qt5.12.10/5.12.10/mingw73_32/include/QtGui/qimageiohandler.h \
@@ -3524,11 +3440,6 @@ debug/widget.o: ../Maze/widget.cpp ../Maze/widget.h \
 		C:/Qt/Qt5.12.10/5.12.10/mingw73_32/include/QtGui/qtguiversion.h \
 		C:/Qt/Qt5.12.10/5.12.10/mingw73_32/include/QtWidgets/QGraphicsScene \
 		C:/Qt/Qt5.12.10/5.12.10/mingw73_32/include/QtWidgets/qgraphicsscene.h \
-		C:/Qt/Qt5.12.10/5.12.10/mingw73_32/include/QtWidgets/QGraphicsView \
-		C:/Qt/Qt5.12.10/5.12.10/mingw73_32/include/QtWidgets/qgraphicsview.h \
-		C:/Qt/Qt5.12.10/5.12.10/mingw73_32/include/QtWidgets/qscrollarea.h \
-		C:/Qt/Qt5.12.10/5.12.10/mingw73_32/include/QtWidgets/qabstractscrollarea.h \
-		C:/Qt/Qt5.12.10/5.12.10/mingw73_32/include/QtCore/QDebug \
 		../Maze/dfssolverthread.h \
 		C:/Qt/Qt5.12.10/5.12.10/mingw73_32/include/QtCore/QThread \
 		../Maze/bfssolverthread.h

@@ -20,7 +20,6 @@ public:
     void change_head(direction d);
     void solveBFS();
     void solveDFS();
-    std::deque<RectNode *> get_children(RectNode *);
 public slots:
     void do_update_scene(RectNode* node,bool state);
 private:

@@ -25,7 +25,7 @@ bool DFSsolverThread::Depth_first_search(RectNode* head){
     }
     for(auto  value: head->real_neighbours()){
         if(head != matrix[0][0]){ //to avoid error loop
-            if(value == *(path.end()-2)){
+            if(value == *(path.end()-2)){ // parent checking
                 continue;
             }
         }
