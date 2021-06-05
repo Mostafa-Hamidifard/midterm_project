@@ -8,7 +8,8 @@ bfsSolverThread::bfsSolverThread(std::deque<RectNode *> &_path,
 
 void bfsSolverThread::run()
 {
-
+    QMutex mutex;
+    mutex.lock();
     bool target_found{false};
     std::deque<RectNode*>   children{ get_children(matrix[0][0])};
     update_scene(matrix[0][0],true);
@@ -58,7 +59,7 @@ void bfsSolverThread::run()
     this->msleep(400);
     for(auto item:path)
         update_scene(item,true);
-  // btn_reset->setEnabled(true);
+    mutex.unlock();
 }
 
 
